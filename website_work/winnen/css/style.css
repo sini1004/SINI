@@ -61,7 +61,7 @@ header span:nth-of-type(12){animation-delay: 1.2s}
 
 }
 .sec1 h1{
-  color: #312D3C;
+  color: #ffffff;
   font-size: 3.5vw;
   font-family: 'S-CoreDream-4Regular';
   font-weight: 600;
@@ -83,13 +83,13 @@ header span:nth-of-type(12){animation-delay: 1.2s}
 .sec1 .right .desc p{ 
   font-size: 1.5vw;
   font-family: 'S-CoreDream-4Regular';
-  color: #6F658A;
+  color: #ffffff;
   text-align: justify;;
 }
 .sec1 .right .desc .tag{
   font-size: 1.5vw;
   font-family: 'S-CoreDream-4Regular';
-  color: #6F658A;
+  color: #ffffff;
   margin-top: 5%;
 }
 .sec1 .right .desc .tag span{
@@ -101,7 +101,7 @@ display: inline-block;
 margin-top: 10%;
 font-size: 2vw;
 font-weight: 600;
-color: #E07257;
+color: #cbac8f;
 padding-bottom: 1%;
 } 
 .sec1 .right  a:before{
@@ -109,7 +109,7 @@ content: '';
 position: absolute;
 width: 0%;
 height: 2px;
-background: #E07257;
+background: #cbac8f;
 left:50%; transform: translateX(-50%);
 bottom:0;
 transition: 0.3s;
