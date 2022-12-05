@@ -104,13 +104,11 @@ img {
   background-color: #263343;
   padding: 8px 12px;
 }
-
-.navbar_logo {
+.navbar .navbar_logo {
   font-size: 24px;
   color: white;
 }
-
-.navbar_logo i {
+.navbar .navbar_logo i {
   color: #d49466;
 }
 
@@ -123,7 +121,6 @@ img {
 .navbar_menu li {
   padding: 8px 12px;
 }
-
 .navbar_menu li:hover {
   background-color: #d49466;
   border-radius: 4px;
@@ -132,10 +129,9 @@ img {
 .navbar_icons {
   list-style: none;
   color: white;
-  display: flex;
+  display: none;
   padding-left: 0;
 }
-
 .navbar_icons li {
   padding: 8px 12px;
 }
