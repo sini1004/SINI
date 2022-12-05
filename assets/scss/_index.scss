@@ -1,0 +1,32 @@
+/* /////////////// header /////////////// */
+#header {
+  border: 2px solid #4f0792;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    a {
+      font: {
+        size: 1.4rem;
+        weight: bold;
+      }
+      padding: 15px;
+    }
+  }
+  nav {
+    ul {
+      li {
+        display: inline;
+        a {
+          display: inline-block;
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
