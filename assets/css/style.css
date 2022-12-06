@@ -100,8 +100,10 @@ header {
   top: 0;
   left: 0;
   height: 50px;
-  background-color: red;
   z-index: 999999;
+}
+header a {
+  color: white;
 }
 
 .navbar {
@@ -164,6 +166,53 @@ header {
   background: rgb(7, 76, 99);
 }
 
+.sec1_text {
+  height: 100vh;
+  position: relative;
+}
+
+.sec1_text_wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.sec1_text h1 {
+  white-space: nowrap;
+}
+
+.sec1_text em {
+  font-size: 17vw;
+  color: #3c6b56;
+  font-family: "Partizeno";
+}
+
+.sec1_text em span {
+  display: inline-block;
+}
+
+.sec1_text p {
+  position: absolute;
+  left: 0;
+  bottom: -5vh;
+  font-size: 1.3vw;
+  font-family: "GmarketSans";
+  font-weight: 300;
+  color: #3c6b56;
+}
+
+.sec1_text p span {
+  display: block;
+}
+
+.sec1_text strong {
+  font-size: 3vw;
+  color: #b99e56;
+  font-family: "Saint Monica";
+}
+
 /* /////////////// section2 /////////////// */
 .section2 .pin-wrap {
   height: 100vh;
@@ -178,10 +227,16 @@ header {
 }
 
 /* /////////////// section3 /////////////// */
-.section3 {
-  width: 100%;
+.section3 .pin-wrap {
   height: 100vh;
-  background: rgb(7, 76, 99);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #0037ff;
+}
+
+.section3 .pin-wrap > div {
+  min-width: 70vw;
 }
 
 /* /////////////// section4 /////////////// */
