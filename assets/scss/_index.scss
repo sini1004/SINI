@@ -1,9 +1,17 @@
 /* /////////////// header /////////////// */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: red;
+  z-index: 999999;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #263343;
   padding: 8px 12px;
   .navbar_logo {
     font-size: 24px;
@@ -41,4 +49,75 @@
   right: 32px;
   font-size: 24px;
   color: #d49466;
+}
+
+.horizontal-scroll {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+/* /////////////// section1 /////////////// */
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(7, 76, 99);
+}
+
+/* /////////////// section2 /////////////// */
+.section2 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+}
+.section2 .pin-wrap > div {
+  min-width: 70vw;
+}
+
+/* /////////////// section3 /////////////// */
+.section3 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(7, 76, 99);
+}
+
+/* /////////////// section4 /////////////// */
+.section4 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(116, 48, 233);
+}
+.section4 .pin-wrap > div {
+  min-width: 60vw;
+}
+
+/* /////////////// section5 /////////////// */
+.section5 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(7, 76, 99);
+}
+
+/* /////////////// section6 /////////////// */
+.section6 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section6 .pin-wrap > div {
+  min-width: 60vw;
+}
+
+/* /////////////// section7 /////////////// */
+.section7 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(41, 41, 41);
+  color: #fff;
 }
