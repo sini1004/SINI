@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* 여백 초기화 */
 * {
   margin: 0;
@@ -40,12 +46,12 @@ figcaption {
 
 /* a 링크 초기화 */
 a {
-  color: #222;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #222;
+  color: white;
 }
 
 /* 폰트 초기화 */
@@ -163,30 +169,30 @@ header a {
 .section1 {
   width: 100%;
   height: 100vh;
-  background: rgb(7, 76, 99);
+  background: #2d4332;
 }
 
 .sec1_text {
-  height: 100vh;
   position: relative;
+  height: 100vh;
 }
 
 .sec1_text_wrap {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   z-index: 20;
 }
 
 .sec1_text h1 {
-  white-space: nowrap;
-}
-
-.sec1_text em {
-  font-size: 17vw;
-  color: #3c6b56;
-  font-family: "Partizeno";
+  height: 40%;
+  padding: 4vw;
+  text-align: center;
+  font-family: "SBAggroB";
+  font-weight: bold;
+  text-shadow: 5px 5px 0px #e4b7a9, 10px 10px 0px #ab8475, 15px 15px 0px #795548;
+  color: #f7f7f7;
 }
 
 .sec1_text em span {
@@ -194,13 +200,9 @@ header a {
 }
 
 .sec1_text p {
-  position: absolute;
-  left: 0;
-  bottom: -5vh;
-  font-size: 1.3vw;
-  font-family: "GmarketSans";
-  font-weight: 300;
-  color: #3c6b56;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .sec1_text p span {
