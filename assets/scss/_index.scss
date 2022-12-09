@@ -118,6 +118,12 @@ header {
   font-family: "Saint Monica";
 }
 
+@mixin border {
+  border: 2px solid $mainColor1;
+  border-top: 0;
+  border-left: 0;
+}
+
 /* /////////////// section2 /////////////// */
 .section2 {
   width: 100%;
@@ -202,7 +208,7 @@ header {
         }
         p {
           background-color: $mainColor1;
-          height: 30px;
+          height: 20px;
         }
       }
       .introduce_about {
@@ -218,7 +224,6 @@ header {
             }
           }
           p {
-            font-size: 18px;
             margin-top: 10px;
           }
         }
@@ -226,7 +231,6 @@ header {
           grid-column-end: span 2;
           background-color: $mainColor1;
           color: $mainColor3;
-          font-size: 38px;
           display: flex;
           align-items: center;
           letter-spacing: 3px;
@@ -234,6 +238,7 @@ header {
           p {
             white-space: nowrap;
             overflow: hidden;
+            font-size: 38px;
             width: 30em;
             animation: type 6s steps(60, end);
             animation-iteration-count: infinite;
@@ -246,42 +251,60 @@ header {
         }
         .item2 {
           grid-row: 1 / 4;
+          border: 2px solid $mainColor1;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
           img {
             width: 70%;
           }
         }
         .item3 {
           border: 2px solid $mainColor1;
+          border-left: 0;
           p {
-            font-size: 21px;
+            font: {
+              size: 21px;
+              weight: bold;
+            }
             span {
+              width: 65px;
+              display: inline-block;
+              opacity: 0.7;
             }
           }
         }
         .item4 {
-          border: 2px solid $mainColor1;
-          border-top: 0;
+          @include border();
         }
         .item5 {
           grid-column-end: span 2;
           background-color: #e0c10d;
           background: url(/assets/img/sky.JPG);
           background-position: center;
+          @include border();
         }
         .item6 {
-          background-color: #e096b1;
+          @include border();
         }
         .item7 {
-          background-color: #763e53;
+          @include border();
         }
-        .item7 {
-          background-color: #641834;
+        .item8 {
+          @include border();
         }
         .item9 {
-          background-color: $mainColor1;
+          border: 2px solid $mainColor1;
+          border-top: 0;
         }
         .item10 {
-          background-color: #29788f;
+          @include border();
+        }
+        .item11 {
+          @include border();
+        }
+        .item12 {
+          @include border();
         }
       }
     }

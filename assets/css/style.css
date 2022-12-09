@@ -312,7 +312,7 @@ header a {
 }
 .section2 .section2_wrap .section2_introduce .introduce_name p {
   background-color: #203e97;
-  height: 30px;
+  height: 20px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about {
   display: grid;
@@ -327,14 +327,12 @@ header a {
   font-weight: bold;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item p {
-  font-size: 18px;
   margin-top: 10px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item1 {
   grid-column-end: span 2;
   background-color: #203e97;
   color: #f9d309;
-  font-size: 38px;
   display: flex;
   align-items: center;
   letter-spacing: 3px;
@@ -343,6 +341,7 @@ header a {
 .section2 .section2_wrap .section2_introduce .introduce_about .item1 p {
   white-space: nowrap;
   overflow: hidden;
+  font-size: 38px;
   width: 30em;
   animation: type 6s steps(60, end);
   animation-iteration-count: infinite;
@@ -354,40 +353,74 @@ header a {
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item2 {
   grid-row: 1/4;
+  border: 2px solid #203e97;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item2 img {
   width: 70%;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item3 {
   border: 2px solid #203e97;
+  border-left: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item3 p {
   font-size: 21px;
+  font-weight: bold;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item3 p span {
+  width: 65px;
+  display: inline-block;
+  opacity: 0.7;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item4 {
   border: 2px solid #203e97;
   border-top: 0;
+  border-left: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item5 {
   grid-column-end: span 2;
   background-color: #e0c10d;
   background: url(/assets/img/sky.JPG);
   background-position: center;
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item6 {
-  background-color: #e096b1;
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item7 {
-  background-color: #763e53;
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
 }
-.section2 .section2_wrap .section2_introduce .introduce_about .item7 {
-  background-color: #641834;
+.section2 .section2_wrap .section2_introduce .introduce_about .item8 {
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item9 {
-  background-color: #203e97;
+  border: 2px solid #203e97;
+  border-top: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item10 {
-  background-color: #29788f;
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item11 {
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item12 {
+  border: 2px solid #203e97;
+  border-top: 0;
+  border-left: 0;
 }
 
 /* /////////////// section3 /////////////// */
