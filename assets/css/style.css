@@ -188,24 +188,60 @@ header a {
   position: relative;
   height: 100vh;
 }
+.sec1_text::before {
+  content: "WELCOME";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(-90deg);
+  letter-spacing: 20px;
+  font-weight: bold;
+  color: #f9d309;
+}
+.sec1_text::after {
+  content: "PORTFOLIO";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(90deg);
+  letter-spacing: 20px;
+  font-weight: bold;
+  color: #f9d309;
+}
 
 .sec1_text_wrap {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
 }
 
 .sec1_text h1 {
-  height: 40%;
+  position: relative;
+  width: 100%;
+  height: 550px;
   padding: 1vw;
   text-align: center;
-  font-size: 7vw;
-  font-family: "SBAggroB";
   font-weight: bold;
-  text-shadow: 5px 5px 0px #e4b7a9, 10px 10px 0px #ab8475, 15px 15px 0px #795548;
+  background: url(/assets/img/sini.jpg);
+  background-position: center top;
+  background-size: cover;
+  border: 10px solid #f9d309;
   color: #f7f7f7;
+}
+.sec1_text h1::before {
+  position: absolute;
+  content: "PORTFOLIO";
+  display: block;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f9d309;
+  bottom: -30px;
+  left: calc(50% - 70px);
 }
 
 .sec1_text em span {
@@ -213,9 +249,10 @@ header a {
 }
 
 .sec1_text p {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
   color: #ffffff;
+  margin-top: 30px;
 }
 
 .sec1_text p span {
@@ -429,7 +466,7 @@ header a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: #0037ff;
+  background-color: #edebdf;
 }
 
 .section3 .pin-wrap > div {
