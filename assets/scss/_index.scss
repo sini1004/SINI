@@ -134,6 +134,7 @@ header {
     min-width: 100vw;
   }
   .section2_wrap {
+    position: relative;
     background-color: $mainColor2;
     padding: 30px;
     .section2_aboutme {
@@ -146,6 +147,11 @@ header {
           weight: bold;
           family: "Abril Fatface", cursive;
         }
+      }
+      .abouticon {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
     .section2_introduce {
@@ -248,6 +254,18 @@ header {
         }
         .item6 {
           background-color: #e096b1;
+        }
+        .item7 {
+          background-color: #763e53;
+        }
+        .item7 {
+          background-color: #641834;
+        }
+        .item9 {
+          background-color: #9137a8;
+        }
+        .item10 {
+          background-color: #29788f;
         }
       }
     }

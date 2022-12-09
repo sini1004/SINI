@@ -245,6 +245,7 @@ header a {
   min-width: 100vw;
 }
 .section2 .section2_wrap {
+  position: relative;
   background-color: #edebdf;
   padding: 30px;
 }
@@ -257,6 +258,11 @@ header a {
   font-size: 100px;
   font-weight: bold;
   font-family: "Abril Fatface", cursive;
+}
+.section2 .section2_wrap .section2_aboutme .abouticon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .section2 .section2_wrap .section2_introduce {
   position: relative;
@@ -356,6 +362,18 @@ header a {
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item6 {
   background-color: #e096b1;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item7 {
+  background-color: #763e53;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item7 {
+  background-color: #641834;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item9 {
+  background-color: #9137a8;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item10 {
+  background-color: #29788f;
 }
 
 /* /////////////// section3 /////////////// */
