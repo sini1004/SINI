@@ -308,6 +308,28 @@ header a {
 }
 .section2 .section2_wrap .section2_introduce .introduce_about {
   border: 1px solid #203e97;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item1 {
+  grid-column-end: span 2;
+  background-color: #ab8475;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item2 {
+  background-color: #5b2510;
+  grid-row: 2/4;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item3 {
+  background-color: #105b19;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item4 {
+  background-color: #4b1db6;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item5 {
+  background-color: #e0c10d;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item6 {
+  background-color: #e096b1;
 }
 
 /* /////////////// section3 /////////////// */
