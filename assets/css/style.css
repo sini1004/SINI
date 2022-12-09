@@ -318,12 +318,23 @@ header a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.section2 .section2_wrap .section2_introduce .introduce_about .item {
+  padding: 20px;
+  color: #203e97;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about .item p {
+  font-size: 18px;
+  margin-top: 10px;
+}
 .section2 .section2_wrap .section2_introduce .introduce_about .item1 {
   grid-column-end: span 2;
   background-color: #203e97;
   color: #f9d309;
   font-size: 38px;
-  padding: 20px;
   display: flex;
   align-items: center;
   letter-spacing: 3px;
@@ -354,11 +365,14 @@ header a {
   font-size: 21px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item4 {
-  background-color: #4b1db6;
+  border: 2px solid #203e97;
+  border-top: 0;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item5 {
   grid-column-end: span 2;
   background-color: #e0c10d;
+  background: url(/assets/img/sky.JPG);
+  background-position: center;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item6 {
   background-color: #e096b1;
@@ -370,7 +384,7 @@ header a {
   background-color: #641834;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item9 {
-  background-color: #9137a8;
+  background-color: #203e97;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item10 {
   background-color: #29788f;

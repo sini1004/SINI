@@ -208,12 +208,25 @@ header {
       .introduce_about {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        .item {
+          padding: 20px;
+          color: $mainColor1;
+          h4 {
+            font: {
+              size: 21px;
+              weight: bold;
+            }
+          }
+          p {
+            font-size: 18px;
+            margin-top: 10px;
+          }
+        }
         .item1 {
           grid-column-end: span 2;
           background-color: $mainColor1;
           color: $mainColor3;
           font-size: 38px;
-          padding: 20px;
           display: flex;
           align-items: center;
           letter-spacing: 3px;
@@ -246,11 +259,14 @@ header {
           }
         }
         .item4 {
-          background-color: #4b1db6;
+          border: 2px solid $mainColor1;
+          border-top: 0;
         }
         .item5 {
           grid-column-end: span 2;
           background-color: #e0c10d;
+          background: url(/assets/img/sky.JPG);
+          background-position: center;
         }
         .item6 {
           background-color: #e096b1;
@@ -262,7 +278,7 @@ header {
           background-color: #641834;
         }
         .item9 {
-          background-color: #9137a8;
+          background-color: $mainColor1;
         }
         .item10 {
           background-color: #29788f;
