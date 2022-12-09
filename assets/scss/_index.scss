@@ -168,6 +168,7 @@ header {
         .item2 {
           grid-column: 2 / span 4;
           border: 2px solid $mainColor1;
+          border-top: 0;
           border-bottom: 1px solid $mainColor1;
           border-left: 1px solid $mainColor1;
           padding: 20px;
@@ -185,6 +186,7 @@ header {
           background-color: $mainColor2;
           color: $mainColor1;
           border: 2px solid $mainColor1;
+          border-top: 0;
           padding: 20px;
           display: flex;
           justify-content: center;
@@ -203,7 +205,10 @@ header {
         grid-template-columns: repeat(4, 1fr);
         .item1 {
           grid-column-end: span 2;
-          background-color: #ab8475;
+          background-color: $mainColor1;
+          color: $mainColor3;
+          font-size: 38px;
+          padding: 20px;
         }
         .item2 {
           background-color: #5b2510;
