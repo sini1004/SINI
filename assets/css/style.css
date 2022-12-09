@@ -110,6 +110,8 @@ header {
 }
 header a {
   color: white;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .navbar {
@@ -122,8 +124,8 @@ header a {
   font-size: 24px;
   color: white;
 }
-.navbar .navbar_logo i {
-  color: #d49466;
+.navbar .navbar_logo a {
+  opacity: 1;
 }
 
 .navbar_menu {
@@ -165,11 +167,21 @@ header a {
   left: 0;
 }
 
+#main {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+#main::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
 /* /////////////// section1 /////////////// */
 .section1 {
   width: 100%;
   height: 100vh;
-  background: #2d4332;
+  background: #203e97;
 }
 
 .sec1_text {
@@ -217,18 +229,34 @@ header a {
 }
 
 /* /////////////// section2 /////////////// */
+.section2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #203e97;
+  padding: 20px;
+}
 .section2 .pin-wrap {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: red;
 }
-
 .section2 .pin-wrap > div {
-  min-width: 70vw;
+  min-width: 100vw;
 }
-
+.section2 .section2_wrap {
+  background-color: #edebdf;
+}
+.section2 .section2_wrap .section2_aboutme {
+  display: flex;
+  justify-content: center;
+}
+.section2 .section2_wrap .section2_aboutme h1 {
+  color: #203e97;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
 /* /////////////// section3 /////////////// */
 .section3 .pin-wrap {
   height: 100vh;

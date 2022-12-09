@@ -8,6 +8,8 @@ header {
   z-index: 999999;
   a {
     color: white;
+    font-weight: bold;
+    opacity: 0.5;
   }
 }
 .navbar {
@@ -18,8 +20,8 @@ header {
   .navbar_logo {
     font-size: 24px;
     color: white;
-    i {
-      color: #d49466;
+    a {
+      opacity: 1;
     }
   }
 }
@@ -58,6 +60,17 @@ header {
   overflow: hidden;
   display: flex;
   left: 0;
+}
+
+#main {
+  overflow-y: scroll;
+
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+#main::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
 /* /////////////// section1 /////////////// */
@@ -106,17 +119,38 @@ header {
 }
 
 /* /////////////// section2 /////////////// */
-.section2 .pin-wrap {
+.section2 {
+  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: red;
+  background-color: $mainColor1;
+  padding: 20px;
+  .pin-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pin-wrap > div {
+    min-width: 100vw;
+  }
+  .section2_wrap {
+    background-color: $mainColor2;
+    .section2_aboutme {
+      display: flex;
+      justify-content: center;
+      h1 {
+        color: $mainColor1;
+        font: {
+          size: 100px;
+          weight: bold;
+          family: "Abril Fatface", cursive;
+        }
+      }
+    }
+    .section2_introduce {
+    }
+  }
 }
-.section2 .pin-wrap > div {
-  min-width: 70vw;
-}
-
 /* /////////////// section3 /////////////// */
 // .section3 {
 //   width: 100%;
