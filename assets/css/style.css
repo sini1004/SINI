@@ -246,6 +246,7 @@ header a {
 }
 .section2 .section2_wrap {
   background-color: #edebdf;
+  padding: 30px;
 }
 .section2 .section2_wrap .section2_aboutme {
   display: flex;
@@ -257,6 +258,58 @@ header a {
   font-weight: bold;
   font-family: "Abril Fatface", cursive;
 }
+.section2 .section2_wrap .section2_introduce {
+  position: relative;
+  border: 5px solid #203e97;
+  padding: 10px;
+  width: 95%;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name {
+  margin-bottom: 30px;
+  display: grid;
+  color: #203e97;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name .item1 {
+  grid-column: 1/6;
+  background-color: #203e97;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name .item2 {
+  grid-column: 2/span 4;
+  border: 2px solid #203e97;
+  border-bottom: 1px solid #203e97;
+  border-left: 1px solid #203e97;
+  padding: 20px;
+  font-size: 30px;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name .item3 {
+  grid-column: 2/span 4;
+  border: 2px solid #203e97;
+  border-left: 1px solid #203e97;
+  padding: 20px;
+  font-size: 30px;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name .item4 {
+  grid-row: 2/6;
+  background-color: #edebdf;
+  color: #203e97;
+  border: 2px solid #203e97;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.section2 .section2_wrap .section2_introduce .introduce_name p {
+  background-color: #203e97;
+  height: 30px;
+}
+.section2 .section2_wrap .section2_introduce .introduce_about {
+  border: 1px solid #203e97;
+}
+
 /* /////////////// section3 /////////////// */
 .section3 .pin-wrap {
   height: 100vh;

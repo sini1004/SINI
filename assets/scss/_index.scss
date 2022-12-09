@@ -135,6 +135,7 @@ header {
   }
   .section2_wrap {
     background-color: $mainColor2;
+    padding: 30px;
     .section2_aboutme {
       display: flex;
       justify-content: center;
@@ -148,6 +149,57 @@ header {
       }
     }
     .section2_introduce {
+      position: relative;
+      border: 5px solid $mainColor1;
+      padding: 10px;
+      width: 95%;
+      .introduce_name {
+        margin-bottom: 30px;
+        display: grid;
+        color: $mainColor1;
+        font: {
+          weight: bold;
+          family: "Abril Fatface", cursive;
+        }
+        .item1 {
+          grid-column: 1 / 6;
+          background-color: $mainColor1;
+        }
+        .item2 {
+          grid-column: 2 / span 4;
+          border: 2px solid $mainColor1;
+          border-bottom: 1px solid $mainColor1;
+          border-left: 1px solid $mainColor1;
+          padding: 20px;
+          font-size: 30px;
+        }
+        .item3 {
+          grid-column: 2 / span 4;
+          border: 2px solid $mainColor1;
+          border-left: 1px solid $mainColor1;
+          padding: 20px;
+          font-size: 30px;
+        }
+        .item4 {
+          grid-row: 2 / 6;
+          background-color: $mainColor2;
+          color: $mainColor1;
+          border: 2px solid $mainColor1;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60px;
+          letter-spacing: 10px;
+        }
+        p {
+          background-color: $mainColor1;
+          height: 30px;
+        }
+      }
+      .introduce_about {
+        border: 1px solid $mainColor1;
+      }
     }
   }
 }
