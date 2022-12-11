@@ -1,12 +1,3 @@
-// 메인 상단메뉴
-const toogleBtn = document.querySelector('.navbar_toogleBtn');
-const menu = document.querySelector('.navbar_menu');
-const icons = document.querySelector('.navbar_icons');
-
-toogleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  icons.classList.toggle('active');
-});
 
 
 // 메인 스크롤
@@ -67,4 +58,23 @@ window.addEventListener("load", function () {
   });
   ScrollTrigger.addEventListener("refresh", () => scroller.update());
   ScrollTrigger.refresh();
+});
+
+
+// 메인 상단메뉴
+
+document.querySelectorAll(".nav ul li a").forEach(li => {
+  li.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelector(li.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+      })
+  })
+});
+
+  $('.ham').click(function () {
+    $('#mNav').toggleClass('active')
+  });
+  $('.mNav_cont ul li').click(function () {
+    $('#mNav').removeClass('active')
 });

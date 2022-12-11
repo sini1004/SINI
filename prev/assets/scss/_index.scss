@@ -1,58 +1,214 @@
 /* /////////////// header /////////////// */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 50px;
-  z-index: 999999;
-  a {
-    color: white;
-    font-weight: bold;
-    opacity: 0.5;
-  }
-}
-.navbar {
+#header {
+  width: 96%;
+  height: 90px;
+  z-index: 5000;
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  .navbar_logo {
-    font-size: 24px;
-    color: white;
-    a {
-      opacity: 1;
-    }
+  position: fixed;
+  left: 2%;
+  top: 25px;
+  border: 1px solid #2e2e2e;
+  backdrop-filter: blur(5px);
+  animation: header 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+#logo span {
+  width: 65px;
+  height: 65px;
+  padding: 7px;
+  margin: 12px;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1.4;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: logo 2s forwards;
+  animation-delay: 6.2s;
+}
+
+#header.active #logo span {
+  color: #000;
+  border: 5px solid #000;
+}
+#header.active .nav li a {
+  color: #000;
+}
+#header.active .nav li a span {
+  color: #999;
+}
+#header.active .ham span {
+  background: #000;
+}
+
+@keyframes header {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
-.navbar_menu {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-.navbar_menu li {
-  padding: 8px 12px;
-  &:hover {
-    background-color: #d49466;
-    border-radius: 4px;
+@keyframes logo {
+  0% {
+    opacity: 0;
   }
-}
-.navbar_icons {
-  list-style: none;
-  color: white;
-  display: none;
-  padding-left: 0;
-  li {
-    padding: 8px 12px;
+  100% {
+    opacity: 1;
   }
 }
 
-.navbar_toogleBtn {
+#nav {
+  margin-right: 4vw;
+}
+.nav li {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.nav li + li {
+  margin-left: 3vw;
+}
+.nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.nav li a span {
+  display: block;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1;
+  color: #e9e9e9;
+}
+.nav li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: skyblue;
+  transition: width 0.5s;
+}
+.nav li:hover a {
+  color: skyblue;
+}
+.nav li:hover a::after {
+  width: 100%;
+}
+
+#mNav {
+  width: 100%;
+  height: 0;
+  z-index: 3000;
   display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  transition: height 1s;
+}
+.ham {
+  width: 25px;
+  height: 20px;
   position: absolute;
-  right: 32px;
-  font-size: 24px;
-  color: #d49466;
+  right: 5vw;
+  top: 25px;
+  z-index: 10000;
+  cursor: pointer;
+}
+.ham span {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  transition: 0.7s;
+}
+.ham span:nth-child(1) {
+  top: 0;
+}
+.ham span:nth-child(2) {
+  top: 9px;
+}
+.ham span:nth-child(3) {
+  top: 18px;
+}
+.mNav_cont {
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  background-color: #171717;
+  transition: 0.5s;
+}
+
+#mNav.active {
+  height: 100vh;
+}
+#mNav.active .mNav_cont {
+  top: 0;
+}
+#mNav.active .ham span {
+  background: #fff;
+}
+#mNav.active .ham span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+#mNav.active .ham span:nth-child(2) {
+  display: none;
+}
+#mNav.active .ham span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.mNav_cont nav {
+  margin-bottom: 30px;
+}
+.mNav_cont li a {
+  font-size: 5vw;
+  font-weight: 800;
+  line-height: 1.8;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.mList li {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.mList li a {
+  font-size: 4vw;
+  line-height: 40px;
+}
+.mList li:nth-child(3) a {
+  font-size: 3.5vw;
+}
+
+.mNav_cont li a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
+.mList li:hover {
+  background-color: skyblue;
+}
+.mList li:hover a {
+  color: #000;
 }
 
 .horizontal-scroll {
@@ -120,7 +276,7 @@ header {
   padding: 1vw;
   text-align: center;
   font-weight: bold;
-  background: url(/assets/img/sini.jpg);
+  // background: url(/assets/img/sini.jpg);
   background-position: center top;
   background-size: cover;
   border: 10px solid $mainColor3;
@@ -205,37 +361,32 @@ header {
       .introduce_name {
         margin-bottom: 10px;
         display: grid;
+        grid-template-columns: 1;
         color: $mainColor1;
         font: {
           weight: bold;
           family: "Abril Fatface", cursive;
         }
         .item1 {
-          grid-column: 1 / 6;
-          background-color: $mainColor1;
-        }
-        .item2 {
-          grid-column: 2 / span 4;
+          grid-column: 2;
           border: 2px solid $mainColor1;
-          border-top: 0;
-          border-bottom: 1px solid $mainColor1;
-          border-left: 1px solid $mainColor1;
-          padding: 20px;
-          font-size: 28px;
-        }
-        .item3 {
-          grid-column: 2 / span 4;
-          border: 2px solid $mainColor1;
-          border-left: 1px solid $mainColor1;
+          border-bottom: 0;
+          border-left: 0;
           padding: 10px;
           font-size: 28px;
         }
-        .item4 {
-          grid-row: 2 / 6;
+        .item2 {
+          grid-column: 2;
+          border: 2px solid $mainColor1;
+          border-left: 0;
+          padding: 10px;
+          font-size: 28px;
+        }
+        .item3 {
+          grid-row: 1 / span 2;
           background-color: $mainColor2;
           color: $mainColor1;
           border: 2px solid $mainColor1;
-          border-top: 0;
           padding: 10px;
           display: flex;
           justify-content: center;
@@ -302,6 +453,7 @@ header {
           p {
             font: {
               size: 18px;
+              margin-top: 3px;
               weight: bold;
             }
             span {

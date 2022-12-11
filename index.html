@@ -4,174 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SINI PORTFOLIO</title>
+  <title>SINI</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Yeseva+One&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/b1e1ca77fa.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
 </head>
 <body>
-
-<!-- //header start -->
-<header id="header">
-  <nav class="navbar">
-    <div class="navbar_logo">
-      <a href="">SINI</a>
+  
+  <header id="header">
+    <h1 id="logo"><a href="#section1"><span>SINI</span></a></h1>
+    <div id="nav">
+        <nav class="nav">
+            <ul>
+                <li><a href="#section2"><span>01.</span>about</a></li>
+                <li><a href="#section3"><span>02.</span>publishing</a></li>
+                <li><a href="#section4"><span>03.</span>script</a></li>
+                <li><a href="#section5"><span>04.</span>animation</a></li>
+                <li><a href="#section6"><span>05.</span>frontend</a></li>
+                <li><a href="#footer"><span>06.</span>contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <ul class="navbar_menu">
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">WORKS</a></li>
-        <li><a href="">SITE</a></li>
-        <li><a href="">PROJECT</a></li>
-        <li><a href="">CONTACT</a></li>
-    </ul>
-    <ul class="navbar_icons">
-        <li><i class="fa-brands fa-github"></i></li>
-        <li><i class="fa-brands fa-square-instagram"></i></li>
-    </ul>
-    <a href="#" class="navbar_toogleBtn"><i class="fas fa-bars"></i></a>
-  </nav>
+    <div id="mNav">
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mNav_cont">
+            <nav>
+                <ul>
+                    <li><a href="#section2">about</a></li>
+                    <li><a href="#section3">works</a></li>
+                    <li><a href="#section4">script</a></li>
+                    <li><a href="#section5">animation</a></li>
+                    <li><a href="#section6">coding</a></li>
+                    <li><a href="#footer">contact</a></li>
+                </ul>
+            </nav>
+            <div class="mList">
+                <ul>
+                    <li><a href="https://github.com/sini1004" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/zzezis/?hl=ko" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
 </header>
-<!-- //header end -->
+<!-- header -->
 
-<main id="main">
-  <section class="section1">
-    <div class="sec1_text">
-      <div class="sec1_text_wrap">
-          <!-- <h1><em class="split">WELCOME<br>TO MY<br>PORTFOLIO</em> -->
-            <h1>
-              
-            </h1>
-          <p>
-              <span data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">I will become a developing front-end developer.</span>
-              <!-- <span data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">developing front-end developer.</span> -->
-          </p>
-          
-      </div>
-    </div>
-  </section>
-  <section class="section2 horizontal-scroll">
-    <div class="pin-wrap section2_wrap">
-      <div>
-        <div class="section2_aboutme">
-          <h1>About Me</h1>
-          <div class="abouticon">
-            <i class="fa-solid fa-computer"></i>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="section2_introduce">
-          <div class="introduce_name">
-            <p class="item1"></p>
-            <h2 class="item2">Shinhee Park</h2>
-            <h3 class="item3">Front-End Developer</h3>
-            <h1 class="item4">ABOUT ME</h1>
-          </div>
-          <div class="introduce_about">
-            <div class="item item1">
-              <p>Let me introduce myself</p>
-            </div>
-            <div class="item2">
-              <img src="assets/img/sini.png" alt="sini">
-            </div>
-            <div class="item item3">
-              <h4>PROFILE</h4>
-              <p><span>Name</span>박신희</p>
-              <p><span>Birth</span>1993.04.01</p>
-              <p><span>Phone</span>010-9118-9855</p>
-              <p><span>Mail</span>p_shinhee@naver.com</p>
-            </div>
-            <div class="item item4">
-              <h4>Hello</h4>
-              <p>
-                프론트엔드를 꿈꾸는 박신희입니다.<br>
-                저의 포트폴리오에 오신 것을 환영합니다.<br>
-                아직은 서툴고 부족하기에 많이 배워야하고 더 많은 노력이 필요하다는 것을 알고 있습니다.<br>
-                실패에 두려워하지 않고, 항상 노력하며 끊임없이 공부하고 센스있는 프론트엔드 개발자가 되겠습니다.
-              </p>
-            </div>
-            <div class="item item5"></div>
-            <div class="item item6">
-              <h4>Listening</h4>
-              <p>저는 상대방의 이야기를 들어주는 것을 좋아하고 진심을 다해 공감해주는 성격이에요!</p>
-            </div>
-            <div class="item item7">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-            <div class="item item8">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-            <div class="item item9">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-            <div class="item item10">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-            <div class="item item11">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-            <div class="item item12">
-              <h4>Less but better</h4>
-              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section3 horizontal-scroll">
-    <div class="pin-wrap">
-      <div>section3 sub1</div>
-      <div>section3 sub2</div>
-      <div>section3 sub3</div>
-      <div>section3 sub4</div>
-    </div>
-  </section>
 
-  <section class="section4 horizontal-scroll">
-      <div class="pin-wrap">
-          <div>section4 sub1</div>
-          <div>section4 sub2</div>
-          <div>section4 sub3</div>
-          <div>section4 sub4</div>
-      </div>
-  </section>
-
-  <section class="section5">
-      section5
-  </section>
-
-  <section class="section6 horizontal-scroll">
-      <div class="pin-wrap">
-          <div>section6 sub1</div>
-          <div>section6 sub2</div>
-          <div>section6 sub3</div>
-          <div>section6 sub4</div>
-      </div>
-  </section>
-
-  <section class="section7">
-      section7
-  </section>
-</main>
-  
-  <!-- <a href="./website_work/winnen/index.html">무인스터디카페위넌</a> -->
-  
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-<script defer src="assets/js/index.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

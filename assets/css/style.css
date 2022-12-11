@@ -1,546 +1,116 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "SBAggroB";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/* 여백 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body,
-div,
-ul,
-li,
-dl,
-dd,
-dt,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-fieldset,
-legend,
-p,
-select,
-table,
-th,
-td,
-tr,
-textarea,
-button,
-form,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
+/* header */
 
-/* a 링크 초기화 */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-}
-
-/* 폰트 초기화 */
-body,
-input,
-textarea,
-select,
-button,
-table {
-  font-family: "NEXON Lv1 Gothic OTF Light", AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
-}
-
-/* 폰트 스타일 초기화 */
-em,
-address {
-  font-style: normal;
-}
-
-/* 블릿기호 초기화 */
-ul,
-li,
-ol {
-  list-style: none;
-}
-
-/* 제목 태그 초기화 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: normal;
-}
-
-/* 버튼 초기화*/
-button {
-  border: 0;
-}
-
-/*반응형 이미지 */
-img {
-  width: 100%;
-}
-
-/* /////////////// header /////////////// */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 50px;
-  z-index: 999999;
-}
-header a {
-  color: white;
-  font-weight: bold;
-  opacity: 0.5;
-}
-
-.navbar {
+#header {width: 96%; height: 90px;z-index: 5000; opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
+  position: fixed; left: 2%; top: 25px;
+  border: 1px solid #2e2e2e;
+  backdrop-filter: blur(5px);
+  animation: header 1.5s ease-in-out forwards;
+  animation-delay: 1s;
 }
-.navbar .navbar_logo {
-  font-size: 24px;
-  color: white;
+#logo span {width: 65px; height: 65px; padding: 7px; margin: 12px; display: inline-block;
+  font-size: 30px; line-height: 1.4; font-style: normal; text-align: center; color: #fff;
+  font-family: 'Graduate';
+  border: 5px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: logo 2s forwards;
+  animation-delay: 6.2s;
+} 
+
+#header.active #logo span {color: #000; border: 5px solid #000}
+#header.active .nav li a {color: #000}
+#header.active .nav li a span {color: #999}
+#header.active .ham span {background: #000}
+
+@keyframes header {
+  0% {transform: translateX(100%); opacity: 0}
+  100% {transform: translateX(0%); opacity: 1}
 }
-.navbar .navbar_logo a {
-  opacity: 1;
+@keyframes logo {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
-.navbar_menu {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
+#nav {margin-right: 4vw; font-family: 'Poppins'}
+.nav li {display: inline-block; overflow: hidden; position: relative}
+.nav li + li {margin-left: 3vw}
+.nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize
 }
+.nav li a span {display: block;
+  font-size: 14px; font-weight: 200; line-height: 1; color: #e9e9e9;
+}
+.nav li a::after {content: ""; width: 0; height: 2px; display: block;
+  background-color: skyblue;
+  transition: width .5s;
+}
+.nav li:hover a{color: skyblue}
+.nav li:hover a::after{width: 100%}
 
-.navbar_menu li {
-  padding: 8px 12px;
+#mNav {width: 100%; height: 0; z-index: 3000; display: none;
+  position: fixed; left: 0px; top: 0px;
+  transition: height 1s;
 }
-.navbar_menu li:hover {
-  background-color: #d49466;
-  border-radius: 4px;
+.ham {width: 25px; height: 20px;
+  position: absolute; right: 5vw; top: 25px;
+  z-index: 10000;
+  cursor: pointer;
 }
-
-.navbar_icons {
-  list-style: none;
-  color: white;
-  display: none;
-  padding-left: 0;
+.ham span {width: 100%; height: 2px;
+  position: absolute; left: 0;
+  background: #fff;
+  transition: .7s;
 }
-.navbar_icons li {
-  padding: 8px 12px;
-}
-
-.navbar_toogleBtn {
-  display: none;
-  position: absolute;
-  right: 32px;
-  font-size: 24px;
-  color: #d49466;
-}
-
-.horizontal-scroll {
-  height: 100vh;
+.ham span:nth-child(1) {top: 0}
+.ham span:nth-child(2) {top: 9px}
+.ham span:nth-child(3) {top: 18px}
+.mNav_cont {
+  width: 100%;
+  height: calc(100% - 50px);
   overflow: hidden;
   display: flex;
-  left: 0;
-}
-
-#main {
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
-}
-
-#main::-webkit-scrollbar {
-  display: none; /* 크롬, 사파리, 오페라, 엣지 */
-}
-
-/* /////////////// section1 /////////////// */
-.section1 {
-  width: 100%;
-  height: 100vh;
-  background: #203e97;
-}
-
-.sec1_text {
-  position: relative;
-  height: 100vh;
-}
-.sec1_text::before {
-  content: "WELCOME";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: rotate(-90deg);
-  letter-spacing: 20px;
-  font-weight: bold;
-  color: #f9d309;
-}
-.sec1_text::after {
-  content: "PORTFOLIO";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: rotate(90deg);
-  letter-spacing: 20px;
-  font-weight: bold;
-  color: #f9d309;
-}
-
-.sec1_text_wrap {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 20;
-}
-
-.sec1_text h1 {
-  position: relative;
-  width: 100%;
-  height: 550px;
-  padding: 1vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  font-weight: bold;
-  background: url(/assets/img/sini.jpg);
-  background-position: center top;
-  background-size: cover;
-  border: 10px solid #f9d309;
-  color: #f7f7f7;
-}
-.sec1_text h1::before {
-  position: absolute;
-  content: "PORTFOLIO";
-  display: block;
-  width: 140px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #f9d309;
-  bottom: -30px;
-  left: calc(50% - 70px);
+  position: absolute; left: 0; top: -100%;
+  background-color: #171717;
+  transition: 1s;
 }
 
-.sec1_text em span {
-  display: inline-block;
-}
+#mNav.active {height: 100vh}
+#mNav.active .mNav_cont {top: 0}
+#mNav.active .ham span {background: #fff}
+#mNav.active .ham span:nth-child(1) {top: 9px; transform: rotate(45deg)}
+#mNav.active .ham span:nth-child(2) {display: none;}
+#mNav.active .ham span:nth-child(3) {top: 9px; transform: rotate(-45deg)}
 
-.sec1_text p {
-  font-size: 2vw;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 30px;
-}
 
-.sec1_text p span {
-  display: block;
-}
 
-.sec1_text strong {
-  font-size: 3vw;
-  color: #b99e56;
-  font-family: "Saint Monica";
+.mNav_cont nav{margin-bottom: 30px}
+.mNav_cont li a {
+  font-size: 5vw;
+  font-weight: 800;
+  line-height: 1.8;
+  font-family: 'Poppins';
+  text-transform: capitalize;
+  transition: all .3s;
 }
+.mList li {width: 40px; height: 40px; padding: 0 10px; display: inline-block;
+  border-radius: 50%;
+}
+.mList li a {font-size: 4vw; line-height: 40px;}
+.mList li:nth-child(3) a {font-size: 3.5vw}
 
-/* /////////////// section2 /////////////// */
-.section2 {
-  width: 100%;
-  height: 100vh;
-  background-color: #203e97;
-  padding: 20px;
+.mNav_cont li a:hover {
+  color: skyblue;
+  text-decoration: underline
 }
-.section2 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.section2 .pin-wrap > div {
-  min-width: 100vw;
-}
-.section2 .section2_wrap {
-  position: relative;
-  background-color: #edebdf;
-  padding: 30px;
-}
-.section2 .section2_wrap .section2_aboutme {
-  display: flex;
-  justify-content: center;
-}
-.section2 .section2_wrap .section2_aboutme h1 {
-  color: #203e97;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: "Abril Fatface", cursive;
-}
-.section2 .section2_wrap .section2_aboutme .abouticon {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.section2 .section2_wrap .section2_introduce {
-  position: relative;
-  border: 5px solid #203e97;
-  padding: 10px;
-  width: 95%;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name {
-  margin-bottom: 10px;
-  display: grid;
-  color: #203e97;
-  font-weight: bold;
-  font-family: "Abril Fatface", cursive;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name .item1 {
-  grid-column: 1/6;
-  background-color: #203e97;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name .item2 {
-  grid-column: 2/span 4;
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-bottom: 1px solid #203e97;
-  border-left: 1px solid #203e97;
-  padding: 20px;
-  font-size: 28px;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name .item3 {
-  grid-column: 2/span 4;
-  border: 2px solid #203e97;
-  border-left: 1px solid #203e97;
-  padding: 10px;
-  font-size: 28px;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name .item4 {
-  grid-row: 2/6;
-  background-color: #edebdf;
-  color: #203e97;
-  border: 2px solid #203e97;
-  border-top: 0;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  letter-spacing: 10px;
-}
-.section2 .section2_wrap .section2_introduce .introduce_name p {
-  background-color: #203e97;
-  height: 20px;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item {
-  padding: 15px;
-  color: #203e97;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item h4 {
-  font-size: 21px;
-  font-weight: bold;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item p {
-  margin-top: 10px;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item1 {
-  grid-column-end: span 2;
-  background-color: #203e97;
-  color: #f9d309;
-  display: flex;
-  align-items: center;
-  letter-spacing: 3px;
-  font-family: "Abril Fatface", cursive;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item1 p {
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 38px;
-  width: 30em;
-  animation: type 6s steps(60, end);
-  animation-iteration-count: infinite;
-}
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item2 {
-  grid-row: 1/4;
-  border: 2px solid #203e97;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item2 img {
-  width: 70%;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item3 {
-  border: 2px solid #203e97;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item3 p {
-  font-size: 18px;
-  font-weight: bold;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item3 p span {
-  width: 65px;
-  display: inline-block;
-  opacity: 0.7;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item4 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item5 {
-  grid-column-end: span 2;
-  background-color: #e0c10d;
-  background: url(/assets/img/sky.JPG);
-  background-position: center;
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item6 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item7 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item8 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item9 {
-  border: 2px solid #203e97;
-  border-top: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item10 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item11 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-.section2 .section2_wrap .section2_introduce .introduce_about .item12 {
-  border: 2px solid #203e97;
-  border-top: 0;
-  border-left: 0;
-}
-
-/* /////////////// section3 /////////////// */
-.section3 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #edebdf;
-}
-
-.section3 .pin-wrap > div {
-  min-width: 70vw;
-}
-
-/* /////////////// section4 /////////////// */
-.section4 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: rgb(116, 48, 233);
-}
-
-.section4 .pin-wrap > div {
-  min-width: 60vw;
-}
-
-/* /////////////// section5 /////////////// */
-.section5 {
-  width: 100%;
-  height: 100vh;
-  background: rgb(7, 76, 99);
-}
-
-/* /////////////// section6 /////////////// */
-.section6 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.section6 .pin-wrap > div {
-  min-width: 60vw;
-}
-
-/* /////////////// section7 /////////////// */
-.section7 {
-  width: 100%;
-  height: 100vh;
-  background: rgb(41, 41, 41);
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-  }
-  .navbar_menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .navbar_menu li {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar_icons {
-    display: none;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar_toogleBtn {
-    display: block;
-  }
-  .navbar_menu.active,
-.navbar_icons.active {
-    display: flex;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+.mList li:hover {background-color: skyblue}
+.mList li:hover a {color: #000;}
