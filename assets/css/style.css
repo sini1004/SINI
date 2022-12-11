@@ -308,7 +308,7 @@ header a {
   width: 95%;
 }
 .section2 .section2_wrap .section2_introduce .introduce_name {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: grid;
   color: #203e97;
   font-weight: bold;
@@ -325,14 +325,14 @@ header a {
   border-bottom: 1px solid #203e97;
   border-left: 1px solid #203e97;
   padding: 20px;
-  font-size: 30px;
+  font-size: 28px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_name .item3 {
   grid-column: 2/span 4;
   border: 2px solid #203e97;
   border-left: 1px solid #203e97;
-  padding: 20px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 28px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_name .item4 {
   grid-row: 2/6;
@@ -340,11 +340,11 @@ header a {
   color: #203e97;
   border: 2px solid #203e97;
   border-top: 0;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 48px;
   letter-spacing: 10px;
 }
 .section2 .section2_wrap .section2_introduce .introduce_name p {
@@ -356,7 +356,7 @@ header a {
   grid-template-columns: repeat(4, 1fr);
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item {
-  padding: 20px;
+  padding: 15px;
   color: #203e97;
 }
 .section2 .section2_wrap .section2_introduce .introduce_about .item h4 {

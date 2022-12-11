@@ -203,7 +203,7 @@ header {
       padding: 10px;
       width: 95%;
       .introduce_name {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         display: grid;
         color: $mainColor1;
         font: {
@@ -221,14 +221,14 @@ header {
           border-bottom: 1px solid $mainColor1;
           border-left: 1px solid $mainColor1;
           padding: 20px;
-          font-size: 30px;
+          font-size: 28px;
         }
         .item3 {
           grid-column: 2 / span 4;
           border: 2px solid $mainColor1;
           border-left: 1px solid $mainColor1;
-          padding: 20px;
-          font-size: 30px;
+          padding: 10px;
+          font-size: 28px;
         }
         .item4 {
           grid-row: 2 / 6;
@@ -236,11 +236,11 @@ header {
           color: $mainColor1;
           border: 2px solid $mainColor1;
           border-top: 0;
-          padding: 20px;
+          padding: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 60px;
+          font-size: 48px;
           letter-spacing: 10px;
         }
         p {
@@ -252,7 +252,7 @@ header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         .item {
-          padding: 20px;
+          padding: 15px;
           color: $mainColor1;
           h4 {
             font: {
