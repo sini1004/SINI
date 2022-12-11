@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
 
@@ -55,9 +56,11 @@
 </header>
 <!-- header -->
 
-<main>
+	<!-- section1 -->
+<main id="main">
 
-	<section id="section1">
+	
+	<section id="section1" class="section1">
 		<div class="sec1 inner">
 				<div class="scroll">
 						<span>scroll</span>
@@ -74,85 +77,129 @@
 				</div>
 		</div>
 	</section>
-	<!-- section1 -->
+	
+  <section class="section2 horizontal-scroll" id="section2">
+    <div class="pin-wrap section2_wrap">
+      <div>
+        <div class="section2_aboutme">
+          <h1>About Me</h1>
+          <div class="abouticon">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section2_introduce">
+          <div class="introduce_name">
+            <!-- <p class="item1"></p> -->
+            <h2 class="item1">Shinhee Park</h2>
+            <h3 class="item2">Front-End Developer</h3>
+            <h1 class="item3">ABOUT ME</h1>
+          </div>
+          <div class="introduce_about">
+            <div class="item item1">
+              <p>Let me introduce myself</p>
+            </div>
+            <div class="item2">
+              <img src="assets/img/sini.png" alt="sini">
+            </div>
+            <div class="item item3">
+              <h4>PROFILE</h4>
+              <p><span>Name</span>박신희</p>
+              <p><span>Birth</span>1993.04.01</p>
+              <p><span>Phone</span>010-9118-9855</p>
+              <p><span>Mail</span>p_shinhee@naver.com</p>
+            </div>
+            <div class="item item4">
+              <h4>Hello</h4>
+              <p>
+                프론트엔드를 꿈꾸는 박신희입니다.<br>
+                저의 포트폴리오에 오신 것을 환영합니다.<br>
+                아직은 서툴고 부족하기에 많이 배워야하고 더 많은 노력이 필요하다는 것을 알고 있습니다.<br>
+                실패에 두려워하지 않고, 항상 노력하며 끊임없이 공부하고 센스있는 프론트엔드 개발자가 되겠습니다.
+              </p>
+            </div>
+            <div class="item item5"></div>
+            <div class="item item6">
+              <h4>Listening</h4>
+              <p>저는 상대방의 이야기를 들어주는 것을 좋아하고 진심을 다해 공감해주는 성격이에요!</p>
+            </div>
+            <div class="item item7">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+            <div class="item item8">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+            <div class="item item9">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+            <div class="item item10">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+            <div class="item item11">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+            <div class="item item12">
+              <h4>Less but better</h4>
+              <p>'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section id="section2">
-		<div class="sec2 inner">
-			ddd
-		</div>
-	</section>
+  <section class="section3 horizontal-scroll" >
+    <div class="pin-wrap">
+      <div>section3 sub1</div>
+      <div>section3 sub2</div>
+      <div>section3 sub3</div>
+      <div>section3 sub4</div>
+    </div>
+  </section>
+
+<section class="section4 horizontal-scroll" id="section4">
+    <div class="pin-wrap">
+        <div>section4 sub1</div>
+        <div>section4 sub2</div>
+        <div>section4 sub3</div>
+        <div>section4 sub4</div>
+    </div>
+</section>
+
+<section class="section5">
+    section5
+</section>
+
+<section class="section6 horizontal-scroll">
+    <div class="pin-wrap">
+        <div>section6 sub1</div>
+        <div>section6 sub2</div>
+        <div>section6 sub3</div>
+        <div>section6 sub4</div>
+    </div>
+</section>
 
 	
-	<section id="frontend" class="main__item">
-		<div class="frontend">
-				<div class="title"><h2>Frontend Works</h2></div>
-				<div class="work react1">
-						<div class="imgWrap">
-								<img src="assets/img/frontend-react-idaho.jpg" alt="react-mockup-1" />
-						</div>
-						<div class="descWrap">
-								<h2>React Idaho Site</h2>
-								<p>React를 이용하여 만든 사이트입니다.<br/>미국 Idaho State을 소개하는 사이트입니다. </p>
-								<div class="btns">
-										<button><a href="https://idaho-react-website.netlify.app/" target='_blank'>full site</a></button>
-										<button><a href="https://github.com/byahram/idaho-react-website" target='_blank'>github</a></button>
-								</div>
-						</div>
-				</div>
-
-				<div class="work react2">
-						<div class="imgWrap">
-								<img src="assets/img/frontend-react-api.jpg" alt="react-mockup-2" />
-						</div>
-						<div class="descWrap">
-								<h2>React API Site</h2>
-								<p>React를 이용하여 만든 사이트입니다.<br/>useEffect를 이용하여 Youtube, Tmdb, Unsplash 등 Fetch API를 호출하고 결과값을 보여주는 사이트입니다.<br/>계속 수정 중에 있습니다.</p>
-								<div class="btns">
-										<button><a href="https://webs-lecture-react-2.netlify.app/" target='_blank'>full site</a></button>
-										<button><a href="https://github.com/byahram/webs-lecture-react-2" target='_blank'>github</a></button>
-								</div>
-						</div>
-				</div>
-
-				<div class="work vue1">
-						<div class="imgWrap">
-								<img src="assets/img/frontend-vue.jpg" alt="vue-mockup" />
-						</div>
-						<div class="descWrap">
-								<h2>Vue API Site</h2>
-								<p>Vue를 이용하여 만든 사이트입니다.<br/>useEffect를 이용하여 Youtube, Tmdb, Unsplash 등 Fetch API를 호출하고 결과값을 보여주는 사이트입니다.<br/>계속 수정 중에 있습니다. </p>
-								<div class="btns">
-										<button><a href="https://webs-lecture-vue-api.netlify.app/" target='_blank'>full site</a></button>
-										<button><a href="https://github.com/byahram/webs-lecture-vue-api" target='_blank'>github</a></button>
-								</div>
-						</div>
-				</div>
-
-				<div class="work react3">
-						<div class="imgWrap">
-								<img src="assets/img/spotify-clone.jpg" alt="react-mockup-3" />
-						</div>
-						<div class="descWrap">
-								<h2>React Spotify App</h2>
-								<p>React를 이용하여 만든 Spotify 웹 어플리케이션입니다.<br/>Tailwind, Redux, RapidAPI 등을 사용하여 작업했습니다.</p>
-								<div class="btns">
-										<button><a href="https://react-spotify-web.netlify.app/" target='_blank'>full site</a></button>
-										<button><a href="https://github.com/byahram/react-spotify-music-app" target='_blank'>github</a></button>
-								</div>
-						</div>
-				</div>
-
-		</div>
-</section>
-<!-- //frontend -->
-
 
 </main>
 
 
 
+<script defer src="assets/js/main.js"></script>
+
+  <script src="assets/js/scroll.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<script src="assets/js/main.js"></script>
 </body>
 </html>
