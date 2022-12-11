@@ -15,3 +15,24 @@ $('.ham').click(function () {
 $('.mNav_cont ul li').click(function () {
   $('#mNav').removeClass('active')
 });
+
+
+
+//section1 
+
+$(".split").each(function () {
+  let text = $(this).text();
+  let split = text.split('').join("</span><span aria-hidden='true'>");
+  split = "<span aria-hidden='true'>" + split + "</span>";
+
+  $(this).html(split).attr("aria-label", text);
+});
+
+setTimeout(function () {
+  gsap.to(".split span", {
+      duration: 0.4,
+      opacity: 1,
+      y: 0,
+      stagger: 0.1
+  })
+}, 2000)

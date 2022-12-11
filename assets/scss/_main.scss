@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /* background */
 #section1 {
   z-index: 1000;
-  background-color: #203e97;
+  background-color: $mainColor1;
 }
 
 /* header */
@@ -17,12 +16,11 @@
   position: fixed;
   left: 2%;
   top: 25px;
-  border: 1px solid #172d6d;
+  border: 1px solid darken($mainColor1, 10%);
   backdrop-filter: blur(5px);
   animation: header 0.7s ease-in-out forwards;
   animation-delay: 0.7s;
 }
-
 #logo span {
   width: 65px;
   padding: 7px;
@@ -41,15 +39,12 @@
   color: #000;
   border: 5px solid #000;
 }
-
 #header.active .nav li a {
   color: #000;
 }
-
 #header.active .nav li a span {
   color: #999;
 }
-
 #header.active .ham span {
   background: #000;
 }
@@ -72,26 +67,23 @@
     opacity: 1;
   }
 }
+
 #nav {
   margin-right: 4vw;
 }
-
 .nav li {
   display: inline-block;
   overflow: hidden;
   position: relative;
 }
-
 .nav li + li {
   margin-left: 3vw;
 }
-
 .nav li a {
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
 }
-
 .nav li a span {
   display: block;
   font-size: 14px;
@@ -99,7 +91,6 @@
   line-height: 1;
   color: #e9e9e9;
 }
-
 .nav li a::after {
   content: "";
   width: 0;
@@ -108,11 +99,9 @@
   background-color: skyblue;
   transition: width 0.5s;
 }
-
 .nav li:hover a {
   color: skyblue;
 }
-
 .nav li:hover a::after {
   width: 100%;
 }
@@ -127,7 +116,6 @@
   top: 0px;
   transition: height 1s;
 }
-
 .ham {
   width: 25px;
   height: 20px;
@@ -137,7 +125,6 @@
   z-index: 10000;
   cursor: pointer;
 }
-
 .ham span {
   width: 100%;
   height: 2px;
@@ -146,19 +133,15 @@
   background: #fff;
   transition: 0.7s;
 }
-
 .ham span:nth-child(1) {
   top: 0;
 }
-
 .ham span:nth-child(2) {
   top: 9px;
 }
-
 .ham span:nth-child(3) {
   top: 18px;
 }
-
 .mNav_cont {
   width: 100%;
   height: calc(100% - 50px);
@@ -178,24 +161,19 @@
 #mNav.active {
   height: 100vh;
 }
-
 #mNav.active .mNav_cont {
   top: 0;
 }
-
 #mNav.active .ham span {
   background: #fff;
 }
-
 #mNav.active .ham span:nth-child(1) {
   top: 9px;
   transform: rotate(45deg);
 }
-
 #mNav.active .ham span:nth-child(2) {
   display: none;
 }
-
 #mNav.active .ham span:nth-child(3) {
   top: 9px;
   transform: rotate(-45deg);
@@ -204,7 +182,6 @@
 .mNav_cont nav {
   margin-bottom: 30px;
 }
-
 .mNav_cont li a {
   font-size: 5vw;
   font-weight: 800;
@@ -212,65 +189,60 @@
   text-transform: capitalize;
   transition: all 0.3s;
 }
-
 .mList li {
   width: 40px;
   height: 40px;
   padding: 0 10px;
   display: inline-block;
   border-radius: 50%;
+  a {
+    font-size: 4vw;
+    line-height: 40px;
+  }
 }
-.mList li a {
-  font-size: 4vw;
-  line-height: 40px;
-}
-
 .mList li:nth-child(3) a {
   font-size: 3.5vw;
 }
-
 .mNav_cont li a:hover {
   color: skyblue;
   text-decoration: underline;
 }
-
 .mList li:hover {
   background-color: skyblue;
 }
-
 .mList li:hover a {
   color: #000;
 }
 
 /* section1 */
+
 .sec1 {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  .scroll {
+    display: none;
+  }
 }
-.sec1 .scroll {
-  display: none;
-}
-
 .text h2 {
   font-size: 7vw;
   line-height: 1.2;
   color: #fff;
-}
-.text h2 strong {
-  display: block;
-  font-weight: 900;
-  color: #f9d309;
-}
-.text h2 em {
-  font-weight: 100;
-}
-.text h2 .split span {
-  opacity: 0;
-  display: inline-block;
-  min-width: 1vw;
-  transform: translateY(30px);
+  strong {
+    display: block;
+    font-weight: 900;
+    color: $mainColor3;
+  }
+  em {
+    font-weight: 100;
+  }
+  .split span {
+    opacity: 0;
+    display: inline-block;
+    min-width: 1vw;
+    transform: translateY(30px);
+  }
 }
 
 .text p {
@@ -282,7 +254,6 @@
   animation: textup 1s ease-in-out forwards;
   animation-delay: 5s;
 }
-
 @keyframes textup {
   0% {
     transform: translateY(50%);
@@ -293,36 +264,3 @@
     opacity: 1;
   }
 }
-.inner {
-  max-width: 80%;
-  margin-left: 14%;
-}
-
-/* 화면너비 0-768px */
-@media (max-width: 768px) {
-  .inner {
-    max-width: 90%;
-    margin: 0 5%;
-  }
-  #header {
-    height: 70px;
-  }
-  #logo span {
-    width: 55px;
-    height: 70px;
-    padding: 7px;
-    margin: 7px;
-    font-size: 25px;
-  }
-  #nav {
-    display: none;
-  }
-  #mNav {
-    display: block;
-  }
-  .text h2 {
-    font-size: 9.5vw;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */

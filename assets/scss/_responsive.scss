@@ -1,0 +1,31 @@
+/* 화면너비 0-768px */
+@media (max-width: 768px) {
+  //common
+  .inner {
+    max-width: 90%;
+    margin: 0 5%;
+  }
+
+  // header
+  #header {
+    height: 70px;
+  }
+  #logo span {
+    width: 55px;
+    height: 70px;
+    padding: 7px;
+    margin: 7px;
+    font-size: 25px;
+  }
+  #nav {
+    display: none;
+  }
+  #mNav {
+    display: block;
+  }
+
+  // section1
+  .text h2 {
+    font-size: 9.5vw;
+  }
+}
