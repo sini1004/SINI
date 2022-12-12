@@ -453,3 +453,14 @@ body {
     }
   }
 }
+
+/* /////////////// section3 /////////////// */
+.section3 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section3 .pin-wrap > div {
+  min-width: 60vw;
+}

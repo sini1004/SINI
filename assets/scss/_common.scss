@@ -9,24 +9,15 @@
   display: flex;
   left: 0;
 }
+
 .section1,
-.section5,
-.section7 {
+.section6 {
   width: 100%;
   height: 100vh;
   background: #111;
   color: #fff;
 }
 
-.section3 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.section3 .pin-wrap > div {
-  min-width: 60vw;
-}
 .section4 .pin-wrap {
   height: 100vh;
   display: flex;
@@ -36,12 +27,12 @@
 .section4 .pin-wrap > div {
   min-width: 60vw;
 }
-.section6 .pin-wrap {
+.section5 .pin-wrap {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.section6 .pin-wrap > div {
+.section5 .pin-wrap > div {
   min-width: 60vw;
 }
