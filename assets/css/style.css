@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .inner {
   max-width: 80%;
   margin-left: 14%;
@@ -528,6 +534,10 @@ body {
 }
 
 /* /////////////// section3 /////////////// */
+.section3 {
+  background-color: #edebdf;
+}
+
 .section3 .pin-wrap {
   height: 100vh;
   display: flex;
