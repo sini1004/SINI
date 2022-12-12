@@ -575,6 +575,62 @@ body {
   font-size: 1.2rem;
   background-color: #203e97;
 }
+.section4 {
+  position: relative;
+}
+
+.section4 .div {
+  position: fixed;
+  z-index: 100;
+  left: 10%;
+  top: 50%;
+}
+
+#section4 {
+  background: goldenrod;
+  overflow: hidden;
+}
+
+.box h1 {
+  font-size: 50px;
+  text-align: centerspa;
+}
+
+.box1 {
+  background: darkslategray;
+}
+
+.box2 {
+  background: crimson;
+}
+
+.box3 {
+  background: darkorchid;
+}
+
+.box4 {
+  background: darkslategray;
+}
+
+.box5 {
+  background: crimson;
+}
+
+.box_wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.box {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
 /* 화면너비 0-768px */
 @media (max-width: 768px) {
   .inner {

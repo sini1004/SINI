@@ -57,3 +57,17 @@
 	ScrollTrigger.addEventListener("refresh", () => scroller.update());
 	ScrollTrigger.refresh();
 });
+
+var $sections = document.querySelectorAll(".horizon_box");
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#section4",
+    pin: true,
+    scrub: 0.3,
+    start: "top top",
+    end: "+=400%",
+  }
+});
+tl.from($sections, {x: '400%', autoAlpha: 0, duration:2, ease: "none", stagger:5})
+  .to($sections, {duration: 3});
+
