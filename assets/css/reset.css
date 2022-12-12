@@ -29,7 +29,7 @@ dl,ul,li,ol,menu {list-style: none}
 
 /* 제목 태그 초기화 */
 
-h1,h3,h4,h5,h6 {font-size: 13px; font-weight: normal; color: #fff}
+h1,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
 
 
 /* 버튼 초기화 */
