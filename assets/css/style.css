@@ -541,13 +541,40 @@ body {
 }
 
 .section3 .pin-wrap > div {
-  min-width: 60vw;
+  min-width: 80vw;
 }
 
-.works_wrap {
-  padding: 0 10vw;
+.works_title {
+  border: 1px solid red;
+  max-width: 50vw;
+  padding: 0 0 0 7vw;
 }
-
+.works_title .works_text h2 {
+  color: #f9d309;
+  font-size: 80px;
+}
+.works_contents {
+  display: flex;
+}
+.works_contents .work {
+  width: 28%;
+  margin: 0 5%;
+  border: 2px solid #203e97;
+  transition: all 0.4s;
+}
+.works_contents .work:hover {
+  box-shadow: 5px 5px #203e97;
+}
+.works_contents .work .work_site {
+  padding: 0.5vh;
+}
+.works_contents .work .work_site h3 {
+  width: 100%;
+  padding: 1vh;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #203e97;
+}
 /* 화면너비 0-768px */
 @media (max-width: 768px) {
   .inner {
