@@ -12,7 +12,8 @@ xhr.onload = function(){
     let newContent = '';
     for(let i = 0; i < respObj.project.length; i++){
       newContent += `<div class="box modal">`;
-      newContent += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`;
+      newContent += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">
+      <div class="click view_more">Click</div>`;
       newContent += `</div>`;
     }
 
