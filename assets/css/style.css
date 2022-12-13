@@ -12,8 +12,7 @@
   left: 0;
 }
 
-.section1,
-.section6 {
+.section1 {
   width: 100%;
   height: 100vh;
   background: #111;
@@ -553,6 +552,7 @@ body {
 .works_contents .work .work_site {
   padding: 0.5vh;
 }
+/* /////////////// section4 /////////////// */
 #section4 {
   background: #203e97;
   overflow: hidden;
@@ -679,6 +679,64 @@ body {
   cursor: pointer;
 }
 
+/* /////////////// section6 /////////////// */
+.section6 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #edebdf;
+  color: #203e97;
+}
+
+/* text_row */
+.text_row {
+  width: 100vw;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text_row .text_inner {
+  animation: textLoop 20s linear infinite;
+}
+.text_row .text_inner .text {
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+.text_row:hover > .text_inner {
+  animation-play-state: paused;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll-start {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* 화면너비 0-768px */
 @media (max-width: 768px) {
   .inner {
