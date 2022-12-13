@@ -1,22 +1,58 @@
 { 
   "project": [
     {
-      "title":"dosirak","url":"/assets/img/dosirak.png"
+      "id" : 1,
+      "title":"dosirak",
+      "url":"/assets/img/dosirak.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     },
     {
-      "title":"binggrae","url":"/assets/img/binggrae.png"
+      "id" : 2,
+      "title":"binggrae",
+      "url":"/assets/img/binggrae.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     },
     {
-      "title":"uerban","url":"/assets/img/uerban.png"
+      "id" : 3,
+      "title":"uerban",
+      "url":"/assets/img/uerban.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     },
     {
-      "title":"tiretech","url":"/assets/img/tiretech.png"
+      "id" : 4,
+      "title":"tiretech",
+      "url":"/assets/img/tiretech.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     },
     {
-      "title":"kakao","url":"/assets/img/kakao.png"
+      "id" : 5,
+      "title":"kakao",
+      "url":"/assets/img/kakao.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     },
     {
-      "title":"60s","url":"/assets/img/60s.png"
+      "id" : 6,
+      "title":"60s",
+      "url":"/assets/img/60s.png",
+      "explanation" : {
+        "comment" : "",
+        "skill" : "html, css, jquery"
+      }
     }
   ] 
 }

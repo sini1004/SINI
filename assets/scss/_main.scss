@@ -547,6 +547,11 @@ body {
       font-size: 50px;
       text-align: center;
     }
+    img {
+      background-size:contain;
+      height: 240px;
+      object-fit: cover;
+    }
   }
 
   .box1 {

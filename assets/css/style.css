@@ -602,6 +602,11 @@ body {
   font-size: 50px;
   text-align: center;
 }
+.section4 .box img {
+  background-size: contain;
+  height: 240px;
+  object-fit: cover;
+}
 .section4 .box1 {
   background-image: url("/assets/img/dosirak.png");
   background-size: contain;
