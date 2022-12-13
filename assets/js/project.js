@@ -1,33 +1,43 @@
-window.onload = function () {
-  //startLoadFile();
-};
+const xhr = new XMLHttpRequest();
+//XMLHttpRequest() - 외부 데이터를 불러들이는 객체
 
-// function startLoadFile(){
-//   $.ajax({
-//       url: '../project.json',
-//       type: 'GET',
-//       dataType : 'json',
-//       success : function (data) {
-//           createProject(data)
-//       }
-//   });
-// }
+xhr.open('get','project.json',true);   //요청을 준비하다
+xhr.send(null);	       //요청을 전송한다
 
-// // JSON 포멧 데이터 처리
-// function createProject(objImageInfo) {
-//   var project = objImageInfo.project;
-//   var strDOM = "";
-//   for (var i = 0; i < project.length; i++) {
-//       // N번째 이미지 정보를 구하기
-//       var image = project[i];
+xhr.onload = function(){
+  
+   if(xhr.status == 200){ //서버 응답이 정상이라면 (Http status code) 
+    respObj = JSON.parse(xhr.responseText);
 
-//       //  N번째 이미지 패널을 생성
-//       //strDOM += '<div class="image_panel">';
-//       //strDOM += '    '<img src="' + image.url + '">';
-//       //strDOM += '    '<p class="title">' + image.title + ''</p>';
-//       //strDOM += ''</div>';
-//   }
-//   // 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
-//   var $imageContainer = $("#image_container");
-//       $imageContainer.append(strDOM);
-// }
+    let newContent = '';
+    for(let i = 0; i < respObj.project.length; i++){
+      newContent += `<div class="box modal">`;
+      newContent += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`;
+      newContent += `</div>`;
+    }
+
+
+
+    // let newModal = '';
+    // for(let i = 0; i < respObj.project.length; i++){
+    //   newModal += `<div class="box_img">`;
+    //   newModal += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`;
+    //   newModal += `<p><strong>${respObj.project[i].title}</strong><br> ${respObj.project[i].title}</p>`;
+    //   newModal += `</div>`;
+    // }
+
+    console.log('내용 출력 : ', newContent);
+    document.getElementById('project_img').innerHTML = newContent;
+    // document.getElementById('modal').innerHTML = newModal;
+  }
+
+
+}  
+
+
+// // "explanation" : [
+  //   {
+  //     "comment" : "",
+  //     "skill" : "html, css, jquery"
+  //   }
+  // ]

@@ -603,35 +603,8 @@ body {
   text-align: center;
 }
 .section4 .box img {
-  background-size: contain;
-  height: 240px;
+  height: 236px;
   object-fit: cover;
-}
-.section4 .box1 {
-  background-image: url("/assets/img/dosirak.png");
-  background-size: contain;
-}
-.section4 .box2 {
-  background-image: url("/assets/img/binggrae.png");
-  background-size: contain;
-}
-.section4 .box3 {
-  background-image: url("/assets/img/urban.png");
-  background-size: contain;
-}
-.section4 .box4 {
-  background-image: url("/assets/img/kakao.png");
-  background-size: contain;
-}
-.section4 .box5 {
-  background-image: url("/assets/img/60s.png");
-  background-size: contain;
-}
-.section4 .box6 {
-  background: rgb(88, 214, 218);
-}
-.section4 .box7 {
-  background: darkorchid;
 }
 .section4 .box_wrapper {
   width: 100%;

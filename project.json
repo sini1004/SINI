@@ -4,6 +4,7 @@
       "id" : 1,
       "title":"dosirak",
       "url":"/assets/img/dosirak.png",
+      "alt" : "dosirak",
       "explanation" : {
         "comment" : "",
         "skill" : "html, css, jquery"
@@ -13,46 +14,29 @@
       "id" : 2,
       "title":"binggrae",
       "url":"/assets/img/binggrae.png",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery"
-      }
+      "alt" : "binggrae"
     },
     {
       "id" : 3,
-      "title":"uerban",
-      "url":"/assets/img/uerban.png",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery"
-      }
+      "title":"urban",
+      "url":"/assets/img/urban.png"
     },
     {
       "id" : 4,
       "title":"tiretech",
-      "url":"/assets/img/tiretech.png",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery"
-      }
+      "url":"/assets/img/tiretech.png"
     },
     {
       "id" : 5,
       "title":"kakao",
-      "url":"/assets/img/kakao.png",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery"
-      }
+      "url":"/assets/img/kakao.png"
     },
     {
       "id" : 6,
       "title":"60s",
-      "url":"/assets/img/60s.png",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery"
-      }
+      "url":"/assets/img/60s.png"
     }
-  ] 
+  ]
+
 }
+

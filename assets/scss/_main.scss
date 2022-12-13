@@ -548,38 +548,11 @@ body {
       text-align: center;
     }
     img {
-      background-size:contain;
-      height: 240px;
+      height: 236px;
       object-fit: cover;
     }
   }
 
-  .box1 {
-    background-image: url("/assets/img/dosirak.png");
-    background-size: contain;
-  }
-  .box2 {
-    background-image: url("/assets/img/binggrae.png");
-    background-size: contain;
-  }
-  .box3 {
-    background-image: url("/assets/img/urban.png");
-    background-size: contain;
-  }
-  .box4 {
-    background-image: url("/assets/img/kakao.png");
-    background-size: contain;
-  }
-  .box5 {
-    background-image: url("/assets/img/60s.png");
-    background-size: contain;
-  }
-  .box6 {
-    background: rgb(88, 214, 218);
-  }
-  .box7 {
-    background: darkorchid;
-  }
   .box_wrapper {
     width: 100%;
     margin-top: 5%;

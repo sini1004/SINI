@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
 </head>
 <body>
 
@@ -191,48 +192,17 @@
   </div>
 </section>
 
-<script>
-  
-const project = { 
-  "project": [
-    {
-      "title":"dosirak","url":"/assets/img/dosirak.png"
-    },
-    {
-      "title":"binggrae","url":"/assets/img/binggrae.png"
-    },
-    {
-      "title":"uerban","url":"/assets/img/uerban.png"
-    },
-    {
-      "title":"tiretech","url":"/assets/img/tiretech.png"
-    },
-    {
-      "title":"kakao","url":"/assets/img/kakao.png"
-    },
-    {
-      "title":"60s","url":"/assets/img/60s.png"
-    }
-  ] 
-}
-
-document.get
-const pro = JSON.stringify(project);
-  console.log(pro);
-  
-</script>
-
 <!-- section4 -->
 <section class="section4 horizontal-scroll" id="section4">
   <p class="section4_title">Clone Coding</p>
   <div class="pin-wrap">
-    <div class="box_wrapper">
+    <div class="box_wrapper" id="project_img">
       <div class="box box1 horizon_box">
         <div id="project_img">
           <!-- 이미지 마크업 생성 공간 -->
-          <img src = "assets/img/binggrae.png" alt="biggrae">
-        </div>
+          <!-- <img src="${respObj.project[0].url}" alt=""> -->
         <div class="click view_more">click!</div>
+        </div>
       </div>
       <div class="box box2 horizon_box">
         <div class="click view_more">click!</div>
@@ -261,7 +231,7 @@ const pro = JSON.stringify(project);
   </div>
 
   <!-- 첫 번째 Modal -->
-  <div class="modal">
+  <div class="modal" id="modal">
     <!-- 첫 번째 Modal의 내용 -->
     <div class="modal-content">
       <span class="close">&times;</span>                         
@@ -317,6 +287,7 @@ const pro = JSON.stringify(project);
 <script defer src="/assets/js/main.js"></script>
 <script src="/assets/js/scroll.js"></script>
 <script src="/assets/js/modal.js"></script>
+
 <script src="/assets/js/project.js"></script>
 
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
