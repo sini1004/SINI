@@ -705,7 +705,8 @@ body {
 .text_row .text_inner .text {
   display: inline-block;
   text-shadow: 3px 3px #f9d309;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  margin: 0 10px;
   font-size: 5rem;
   font-weight: bold;
   font-family: "Abril Fatface", cursive;

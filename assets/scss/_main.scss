@@ -649,7 +649,8 @@ body {
     .text {
       display: inline-block;
       text-shadow: 3px 3px $mainColor3;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
+      margin: 0 10px;
       font: {
         size: 5rem;
         weight: bold;
