@@ -45,6 +45,8 @@
       "title" : "도시락통",
       "skill" : "html, css, jquery",
       "page" : "Main",
+      "view":"https://www.naver.com/",
+      "code":"https://www.naver.com/",
       "comment" : "반응형으로 작업하였습니다."
     }
   ]

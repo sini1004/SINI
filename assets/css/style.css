@@ -662,6 +662,7 @@ body {
   padding: 20px;
   width: 60%; /* Could be more or less, depending on screen size */
   color: #222;
+  border-radius: 3px;
 }
 .modal-content h3 {
   color: #203e97;
