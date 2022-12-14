@@ -25,6 +25,7 @@ xhr.onload = function(){
       newModal += `<img src= "${respObj.explanation[i].url}" alt="${respObj.explanation[i].alt}">`;
       newModal += `<h3><span>title</span> ${respObj.explanation[i].title}</h3>`;
       newModal += `<p><span>skill</span> ${respObj.explanation[i].skill}</p>`;
+      newModal += `<div class="click_button"><button class="view">view site</button><button class="code">view code</button></div>`;
       newModal += `</div>`;
     }
 

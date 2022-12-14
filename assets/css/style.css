@@ -660,7 +660,7 @@ body {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
   color: #222;
 }
 .modal-content h3 {
@@ -674,11 +674,23 @@ body {
 }
 .modal-content p span {
   display: inline-block;
-  background-color: #203e97;
-  color: white;
+  color: black;
   padding: 7px;
   border-radius: 3px;
   margin-right: 10px;
+}
+.modal-content .click_button {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content .click_button button {
+  width: 49%;
+  text-align: center;
+  background-color: #203e97;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 /* The Close Button */

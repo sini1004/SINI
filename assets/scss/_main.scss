@@ -608,7 +608,7 @@ body {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
   color: $textColor1;
   h3 {
     color: $mainColor1;
@@ -620,11 +620,24 @@ body {
     text-transform: uppercase;
     span {
       display: inline-block;
-      background-color: $mainColor1;
-      color: white;
+      // background-color: $mainColor1;
+      color: black;
       padding: 7px;
       border-radius: 3px;
       margin-right: 10px;
+    }
+  }
+  .click_button {
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 49%;
+      text-align: center;
+      background-color: $mainColor1;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      border-radius: 3px;
     }
   }
 }
