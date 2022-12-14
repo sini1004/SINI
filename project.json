@@ -7,7 +7,8 @@
       "alt" : "dosirak",
       "explanation" : {
         "comment" : "",
-        "skill" : "html, css, jquery"
+        "skill" : "html, css, jquery",
+        "page" : "Main"
       }
     },
     {
@@ -19,22 +20,26 @@
     {
       "id" : 3,
       "title":"urban",
-      "url":"/assets/img/urban.png"
+      "url":"/assets/img/urban.png",
+      "alt" : "urban"
     },
     {
       "id" : 4,
       "title":"tiretech",
-      "url":"/assets/img/tiretech.png"
+      "url":"/assets/img/tiretech.png",
+      "alt" : "tiretech"
     },
     {
       "id" : 5,
       "title":"kakao",
-      "url":"/assets/img/kakao.png"
+      "url":"/assets/img/kakao.png",
+      "alt" : "kakao"
     },
     {
       "id" : 6,
       "title":"60s",
-      "url":"/assets/img/60s.png"
+      "url":"/assets/img/60s.png",
+      "alt" : "60s"
     }
   ]
 

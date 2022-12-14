@@ -172,10 +172,12 @@
     <div>
       <div class="works_contents">
         <div class="work work1">
-          <div class="work_site">
-            <img src="/assets/img/works1_main.png" alt="">
-            <h3>웹사이트명</h3>
-          </div>
+          <a href="/website_work/winnen/index.html" target="_blank">
+            <div class="work_site">
+              <img src="/assets/img/works1_main.png" alt="">
+              <h3>웹사이트명</h3>
+            </div>
+          </a>
         </div>
         <div class="work work2">
           <div class="work_site">
@@ -204,18 +206,9 @@
         <div class="click view_more">click!</div>
         </div>
       </div>
-      <div class="box box2 horizon_box">
+      <!-- <div class="box box2 horizon_box">
         <div class="click view_more">click!</div>
-      </div>
-      <div class="box box3 horizon_box">
-        <div class="click view_more">click!</div>
-      </div>
-      <div class="box box4 horizon_box">
-        <div class="click view_more">click!</div>
-      </div>
-      <div class="box box5 horizon_box">
-        <div class="click view_more">click!</div>
-      </div>
+      </div> -->
     </div>
 
       <!-- <div>section4 sub1</div>
@@ -224,39 +217,33 @@
       <div>section4 sub4</div> -->
   </div>
 
-  <!-- 첫 번째 Modal -->
-  <div class="modal" id="modal">
-    <!-- 첫 번째 Modal의 내용 -->
-    <div class="modal-content">
-      <span class="close">&times;</span>                         
-      <p>첫 번째 Modal</p>
-    </div>
-  </div>
-  <!-- 두 번째 Modal -->
-  <div class="modal">
-    <!-- 두 번째 Modal의 내용 -->
-    <div class="modal-content">
-      <span class="close">&times;</span>                         
-      <p>두 번째 Modal</p>
-    </div>
-  </div>
-  <!-- 세 번째 Modal -->
-  <div class="modal">
-    <!-- 세 번째 Modal의 내용 -->
-    <div class="modal-content">
-      <span class="close">&times;</span>                         
-      <p>세 번째 Modal</p>
-    </div>
-  </div>
-  <!-- 네 번째 Modal -->
-  <div class="modal">
-    <!-- 네 번째 Modal의 내용 -->
-    <div class="modal-content">
-      <span class="close">&times;</span>                         
-      <p>네 번째 Modal</p>
-    </div>
-  </div>
+    <!-- <script>
+    const open = () => {
+      document.querySelector("modal").classList.remove( "hidden" );
+
+    console.log('first', open);
+    }
+    const close = () =>{
+      document.querySelector("modal").classList.add("hidden" ) ;
+    }
+    document.querySelector(".openBtn").addEventListener("click", open) ; 
+    document.querySelector(".closeBtn").addEventListener("click", close);
+    document.querySelector(".bg").addEventListener("click" , close);
+    </script> -->
 </section>
+
+<script>
+
+
+const click = ()=> {
+  let btns = document.querySelector(".click");
+  btns.onclick = sayHello;
+}
+
+function sayHello() {
+  console.log("Hello");
+}
+</script>
 
 <!-- section5 -->
 <section class="section5 horizontal-scroll">
@@ -278,12 +265,12 @@
           <p class="text"> I'M PARK SHIN-HEE, </p>
           <p class="text"> A NEW FRONT-END DEVELOPER. </p>
       </div>
-      <!-- <div class="text_inner">
-        <p class="text">publisher</p>
-        <p class="text">front-end developer</p>
-        <p class="text">publisher</p>
-        <p class="text">front-end developer</p>
-      </div> -->
+      <div class="text_inner">
+          <p class="text"> I'M PARK SHIN-HEE, </p>
+          <p class="text"> A NEW FRONT-END DEVELOPER. </p>
+          <p class="text"> I'M PARK SHIN-HEE, </p>
+          <p class="text"> A NEW FRONT-END DEVELOPER. </p>
+      </div>
   </div>
 </section>
 
@@ -294,9 +281,8 @@
 
 <script defer src="/assets/js/main.js"></script>
 <script defer src="/assets/js/scroll.js"></script>
-<script defer src="/assets/js/modal.js"></script>
-
 <script defer src="/assets/js/project.js"></script>
+<script defer src="/assets/js/modal.js"></script>
 
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

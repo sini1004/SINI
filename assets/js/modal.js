@@ -1,7 +1,11 @@
 // Modal을 가져옵니다.
-let modals = document.getElementsByClassName("modal");
+let modals = document.querySelector(".modal");
+console.log('ㄴㄴ',modals);
 // Modal을 띄우는 클래스 이름을 가져옵니다.
-let btns = document.getElementsByClassName("view_more");
+let btns = document.querySelector(".click");
+console.log('버튼',btns);
+
+
 // Modal을 닫는 close 클래스를 가져옵니다.
 let spanes = document.getElementsByClassName("close");
 let funcs = [];
@@ -21,6 +25,7 @@ function Modal(num) {
     };
   };
 } 
+
 
 // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
 for(let i = 0; i < btns.length; i++) {
