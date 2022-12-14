@@ -22,7 +22,9 @@ xhr.onload = function(){
     for(let i = 0; i < respObj.explanation.length; i++){
       newModal += `<div class="modal-content">`;
       newModal += `<span class="close">&times;</span>`;
-      newModal += `<h3>"${respObj.explanation[i].comment}"</h3>`;
+      newModal += `<img src= "${respObj.explanation[i].url}" alt="${respObj.explanation[i].alt}">`;
+      newModal += `<h3><span>title</span> ${respObj.explanation[i].title}</h3>`;
+      newModal += `<p><span>skill</span> ${respObj.explanation[i].skill}</p>`;
       newModal += `</div>`;
     }
 

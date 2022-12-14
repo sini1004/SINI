@@ -40,9 +40,12 @@
   "explanation" : [
     {
       "id" : 1,
-      "comment" : "도시락통",
+      "url":"/assets/img/dosirak.png",
+      "alt" : "dosirak",
+      "title" : "도시락통",
       "skill" : "html, css, jquery",
-      "page" : "Main"
+      "page" : "Main",
+      "comment" : "반응형으로 작업하였습니다."
     }
   ]
 }
