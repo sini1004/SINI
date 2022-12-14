@@ -18,31 +18,15 @@ xhr.onload = function(){
     }
 
 
-  const click = document.getElementsByName('click').childNodes;
-  console.log('click :', click);
+    let newModal = '';
+    for(let i = 0; i < respObj.explanation.length; i++){
+      newModal += `<div class="modal-content">`;
+      newModal += `<h3>"${respObj.explanation[i].comment}"</h3>`;
+      newModal += `</div>`;
+    }
 
 
-
-    // let newModal = '';
-    // for(let i = 0; i < respObj.project.length; i++){
-    //   newModal += `<div class="box_img">`;
-    //   newModal += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`;
-    //   newModal += `<p><strong>${respObj.project[i].title}</strong><br> ${respObj.project[i].title}</p>`;
-    //   newModal += `</div>`;
-    // }
-
-    console.log('내용 출력 : ', newContent);
     document.getElementById('project_img').innerHTML = newContent;
-    // document.getElementById('modal').innerHTML = newModal;
+    document.getElementById('modal').innerHTML = newModal;
   }
-
-
 }  
-
-
-// // "explanation" : [
-  //   {
-  //     "comment" : "",
-  //     "skill" : "html, css, jquery"
-  //   }
-  // ]

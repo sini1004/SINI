@@ -4,12 +4,7 @@
       "id" : 1,
       "title":"dosirak",
       "url":"/assets/img/dosirak.png",
-      "alt" : "dosirak",
-      "explanation" : {
-        "comment" : "",
-        "skill" : "html, css, jquery",
-        "page" : "Main"
-      }
+      "alt" : "dosirak"
     },
     {
       "id" : 2,
@@ -41,7 +36,14 @@
       "url":"/assets/img/60s.png",
       "alt" : "60s"
     }
+  ],
+  "explanation" : [
+    {
+      "id" : 1,
+      "comment" : "도시락통",
+      "skill" : "html, css, jquery",
+      "page" : "Main"
+    }
   ]
-
 }
 
