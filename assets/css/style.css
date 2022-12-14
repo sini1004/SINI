@@ -709,6 +709,37 @@ body {
   cursor: pointer;
 }
 
+/* /////////////// section5 /////////////// */
+.project_wrap {
+  height: 80vh;
+  margin-top: 100px;
+  border: 2px solid #edebdf;
+  display: flex;
+}
+.project_wrap .project_desc h3 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+.project_wrap .project_desc p {
+  font-size: 1.5rem;
+}
+.project_wrap .project_desc .project_btn {
+  margin-top: 5rem;
+}
+.project_wrap .project_desc .project_btn button {
+  width: 12rem;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 2px solid #edebdf;
+  box-shadow: 3px -3px #edebdf;
+}
+.project_wrap .project_desc .project_btn button a {
+  color: #203e97;
+}
+
 /* /////////////// section6 /////////////// */
 .section6 {
   width: 100%;
