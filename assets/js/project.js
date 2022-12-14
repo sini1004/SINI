@@ -21,6 +21,7 @@ xhr.onload = function(){
     let newModal = '';
     for(let i = 0; i < respObj.explanation.length; i++){
       newModal += `<div class="modal-content">`;
+      newModal += `<span class="close">&times;</span>`;
       newModal += `<h3>"${respObj.explanation[i].comment}"</h3>`;
       newModal += `</div>`;
     }
