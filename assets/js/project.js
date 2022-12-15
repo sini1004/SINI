@@ -31,8 +31,12 @@ xhr.onload = function(){
       newModal += `</div>`;
     }
 
+    
 
-    document.getElementById('project_img').innerHTML = newContent;
+
+    document.getElementById('site_img').innerHTML = newContent;
     document.getElementById('modal').innerHTML = newModal;
+    document.getElementById('project_img').innerHTML = newProject;
+    console.log(project_img);
   }
 }  

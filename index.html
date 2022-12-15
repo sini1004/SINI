@@ -198,42 +198,27 @@
 <section class="section4 horizontal-scroll" id="section4">
   <p class="section4_title">Web Site</p>
   <div class="pin-wrap">
-    <div class="box_wrapper" id="project_img">
+    <div class="box_wrapper" id="site_img">
       <div class="box box1 horizon_box">
-        <div id="project_img">
+        <div id="site_img">
           <!-- 이미지 마크업 생성 공간 -->
-          <!-- <img src="${respObj.project[0].url}" alt=""> -->
-          <!-- <div class="click view_more">click!</div> -->
         </div>
       </div>
-      <!-- <div class="box box2 horizon_box">
-        <div class="click view_more">click!</div>
-      </div> -->
     </div>
   </div>
 </section>
 
 <script>
 window.onload = function() {
-
-    const modals = document.getElementsByClassName("modal");
-
-		var click = document.getElementsByClassName('box');
-		// header 객체에 onclick 이벤트 속성을 연결
-
-    for (let c = 0; c < click.length; c++){
-      click[c].onclick = function() {
-			// alert('클릭');
-        modals[c].style.display = "block";
-        console.log(modals[c]);
-		  }
+  const modals = document.getElementsByClassName("modal");
+  var click = document.getElementsByClassName('box');
+  for (let c = 0; c < click.length; c++){
+    click[c].onclick = function() {
+      modals[c].style.display = "block";
+      console.log(modals[c]);
     }
-		// click[1].onclick = function(e) {
-		// 	// alert('클릭');
-    //     modals[0].style.display = "block";
-    //     console.log(modals[0]);
-		// }
-	};
+  }
+};
 </script>
 
 
@@ -241,13 +226,17 @@ window.onload = function() {
 <!-- section5 -->
 <section class="section5 horizontal-scroll">
   <div class="pin-wrap">
-      <div>section5 sub1</div>
+      <div>
+        <div class="section5_project">
+          <h1>Project</h1>
+        </div>
+      </div>
       <div>
         <div class="project_wrap">
-          <div class="project_img">
+          <div class="project_img" id="project_img">
             <img src="/assets/img/clone1.jpeg" alt="">
           </div>
-          <div class="project_desc">
+          <div class="project_desc" id="project_desc">
             <h3>React Idaho Site</h3>
             <p>
               자바스크립트를 이용하여 제작한 사이트입니다.<br>
@@ -323,18 +312,21 @@ window.onload = function() {
   </div>
 </div>
 
+
+
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
 <script defer src="/assets/js/main.js"></script>
 <script src="/assets/js/scroll.js"></script>
 <script src="/assets/js/project.js"></script>
 <script src="/assets/js/modal.js"></script>
 
 
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 </body>
 </html>

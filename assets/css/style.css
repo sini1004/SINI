@@ -37,17 +37,6 @@
   color: #fff;
 }
 
-.section5 .pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.section5 .pin-wrap > div {
-  min-width: 60vw;
-}
-
 /* background */
 body {
   background-color: #203e97;
@@ -729,27 +718,58 @@ body {
 }
 
 /* /////////////// section5 /////////////// */
+.section5 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section5 .pin-wrap > div {
+  min-width: 80vw;
+}
+
 .project_wrap {
   height: 80vh;
   margin-top: 100px;
-  border: 2px solid #edebdf;
   display: flex;
 }
+.project_wrap .project_img {
+  width: 55%;
+  border: 2px solid #edebdf;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+.project_wrap .project_img img {
+  height: 100%;
+  object-fit: cover;
+}
+.project_wrap .project_desc {
+  width: 45%;
+  border: 2px solid #edebdf;
+  background-color: #203e97;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 0 0.5rem;
+  padding: 5%;
+}
 .project_wrap .project_desc h3 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
 .project_wrap .project_desc p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .project_wrap .project_desc .project_btn {
   margin-top: 5rem;
 }
 .project_wrap .project_desc .project_btn button {
-  width: 12rem;
+  width: 10rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   text-transform: capitalize;
   border: 2px solid #edebdf;
@@ -757,6 +777,9 @@ body {
 }
 .project_wrap .project_desc .project_btn button a {
   color: #203e97;
+}
+.project_wrap .project_desc .project_btn button:nth-child(1) {
+  margin-right: 5px;
 }
 
 /* /////////////// section6 /////////////// */
