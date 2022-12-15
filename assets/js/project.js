@@ -10,9 +10,9 @@ xhr.onload = function(){
     respObj = JSON.parse(xhr.responseText);
 
     let newContent = '';
-    for(let i = 0; i < respObj.project.length; i++){
+    for(let i = 0; i < respObj.site.length; i++){
       newContent += `<div class="box">`;
-      newContent += `<div class="click">Click</div><img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">
+      newContent += `<div class="click">Click</div><img src= "${respObj.site[i].url}" alt="${respObj.site[i].alt}">
       `;
       newContent += `</div>`;
     }
