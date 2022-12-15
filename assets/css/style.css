@@ -724,20 +724,36 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.section5 .section5_project {
+  display: flex;
+  justify-content: center;
+}
+.section5 .section5_project h1 {
+  color: #edebdf;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
 
 .section5 .pin-wrap > div {
   min-width: 80vw;
 }
 
-.project_wrap {
+#project_wrap {
+  display: flex;
   height: 80vh;
   margin-top: 100px;
+}
+
+.project_wrap {
   display: flex;
+  width: 90vw;
+  margin-right: 3vw;
 }
 .project_wrap .project_img {
   width: 55%;
   border: 2px solid #edebdf;
-  margin: 0rem 0.5rem 0rem 0rem;
+  margin: 0rem 0.2rem 0rem 0rem;
 }
 .project_wrap .project_img img {
   height: 100%;
@@ -746,13 +762,14 @@ body {
 .project_wrap .project_desc {
   width: 45%;
   border: 2px solid #edebdf;
-  background-color: #203e97;
+  background-color: #edebdf;
+  color: #222;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 0 0 0 0.5rem;
+  margin: 0 0 0 0.2rem;
   padding: 5%;
 }
 .project_wrap .project_desc h3 {
@@ -772,14 +789,15 @@ body {
   font-size: 1rem;
   padding: 0.5rem 1rem;
   text-transform: capitalize;
-  border: 2px solid #edebdf;
-  box-shadow: 3px -3px #edebdf;
+  background-color: #203e97;
+  border: 2px solid #f9d309;
+  box-shadow: 3px -3px #f9d309;
 }
 .project_wrap .project_desc .project_btn button a {
-  color: #203e97;
+  color: #f9d309;
 }
 .project_wrap .project_desc .project_btn button:nth-child(1) {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /* /////////////// section6 /////////////// */

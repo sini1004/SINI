@@ -50,12 +50,32 @@
       "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
     }
   ],
-  "project1" : [
+  "project" : [
     {
       "id" : 1,
-      "url":"/assets/clone1.jpeg",
-      "alt" : "dosirak",
-      "pdf":"자료"
+      "url":"/assets/img/clone1.jpeg",
+      "alt" : "clone1",
+      "title" : "Tous les jours Redesign",
+      "period" : "2022.11.00 - 2022.11.11(10일)",
+      "tool" : "html,css,jquery",
+      "page" : "main+sub*2",
+      "desc" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 작업을 진행한 뚜레쥬르 사이트입니다. 자바스크립트 라이브러리인 jQuery를 이용했고, 이미지 슬라이드를 구현하기 위해 Swipper를 사용하여 구현하였습니다.",
+      "site" : "https://byahram.github.io/",
+      "github" : "https://byahram.github.io/",
+      "pdf" : "자료"
+    },
+    {
+      "id" : 2,
+      "url":"/assets/img/clone1.jpeg",
+      "alt" : "clone1",
+      "title" : "CHWEDU(학생이용 앱)",
+      "period" : "2022.11.10 - 2022.12.01(22일)",
+      "tool" : "html,css,jquery,javascript",
+      "page" : "main+sub*4",
+      "desc" : "설명을 써주세요",
+      "site" : "https://byahram.github.io/",
+      "github" : "https://byahram.github.io/",
+      "pdf" : "자료"
     }
   ]
 }

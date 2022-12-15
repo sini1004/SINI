@@ -33,10 +33,30 @@ xhr.onload = function(){
 
     
 
+    let newProject = '';
+    for(let i = 0; i < respObj.project.length; i++){
+      newProject += `<div class="project_wrap">`
+      newProject += `<div class="project_img">`
+      newProject += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`
+      newProject += `</div>`
+
+      newProject += `<div class="project_desc">`
+
+      newProject += `<h3>${respObj.project[i].title}</h3>`
+      newProject += `<p>${respObj.project[i].desc}</p>`
+
+      newProject += `<div class="project_btn">`
+      newProject += `<button><a href="${respObj.project[i].site}">View Site</a></button>`
+      newProject += `<button><a href="${respObj.project[i].github}">Github</a></button>`
+      newProject += `</div>`
+      newProject += `</div>`
+      newProject += `</div>`
+    }
 
     document.getElementById('site_img').innerHTML = newContent;
     document.getElementById('modal').innerHTML = newModal;
-    document.getElementById('project_img').innerHTML = newProject;
+    document.getElementById('project_wrap').innerHTML = newProject;
+    
     console.log(project_img);
   }
 }  
