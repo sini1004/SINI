@@ -774,11 +774,18 @@ body {
 .project_wrap .project_desc h3 {
   font-size: 2rem;
   font-weight: 900;
-  margin-bottom: 1.5rem;
 }
 .project_wrap .project_desc p {
   font-size: 1rem;
   line-height: 1.5;
+  padding: 10px 0;
+  margin: 1rem 0;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+.project_wrap .project_desc span {
+  font-size: 1rem;
+  font-weight: 100;
 }
 .project_wrap .project_desc .project_btn {
   margin-top: 5rem;
