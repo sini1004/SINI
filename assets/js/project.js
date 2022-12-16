@@ -31,10 +31,13 @@ xhr.onload = function(){
       newModal += `</div>`;
     }
 
-    
+  
 
     let newProject = '';
     for(let i = 0; i < respObj.project.length; i++){
+
+      let checkPdf = respObj.project[i].hasOwnProperty('pdf'); // true
+
       newProject += `<div class="project_wrap">`
       newProject += `<div class="project_img">`
       newProject += `<img src= "${respObj.project[i].url}" alt="${respObj.project[i].alt}">`
@@ -48,8 +51,13 @@ xhr.onload = function(){
       newProject += `<span>${respObj.project[i].page}</span>`
 
       newProject += `<div class="project_btn">`
-      newProject += `<button><a href="${respObj.project[i].site}">View Site</a></button>`
+      newProject += `<button><a href="${respObj.project[i].site}">View</a></button>`
       newProject += `<button><a href="${respObj.project[i].github}">Github</a></button>`
+
+      if(checkPdf){
+        newProject += `<button><a href="${respObj.project[i].pdf}">PDF</a></button>`
+      }
+      // newProject += `<button><a href="${respObj.project[i].pdf}">PDF</a></button>`
       newProject += `</div>`
       newProject += `</div>`
       newProject += `</div>`

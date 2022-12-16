@@ -61,8 +61,7 @@
       "page" : "main+sub*2",
       "desc" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 작업을 진행한 뚜레쥬르 사이트입니다.&nbsp; 자바스크립트 라이브러리인 jQuery를 이용했고, 이미지 슬라이드를 구현하기 위해 Swipper를 사용하여 구현하였습니다.",
       "site" : "https://sini1004.github.io/",
-      "github" : "https://sini1004.github.io/",
-      "pdf" : "자료"
+      "github" : "https://sini1004.github.io/"
     },
     {
       "id" : 2,
@@ -87,8 +86,7 @@
       "page" : "main+sub*4",
       "desc" : "REACT Context API",
       "site" : "https://sini1004.github.io/",
-      "github" : "https://sini1004.github.io/",
-      "pdf" : "자료"
+      "github" : "https://sini1004.github.io/"
     },
     {
       "id" : 4,
@@ -100,8 +98,7 @@
       "page" : "main+sub*4",
       "desc" : "REACT ",
       "site" : "https://sini1004.github.io/",
-      "github" : "https://sini1004.github.io/",
-      "pdf" : "자료"
+      "github" : "https://sini1004.github.io/"
     }
   ]
 }

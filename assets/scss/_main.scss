@@ -728,11 +728,12 @@ body {
         size: 1rem;
         weight: 100;
       }
+      line-height: 1.8;
     }
     .project_btn {
       margin-top: 5rem;
       button {
-        width: 10rem;
+        width: 30%;
         text-align: center;
         font-size: 1rem;
         padding: 0.5rem 1rem;
@@ -744,6 +745,9 @@ body {
           color: white;
         }
         &:nth-child(1) {
+          margin-right: 10px;
+        }
+        &:nth-child(2) {
           margin-right: 10px;
         }
       }
