@@ -57,6 +57,5 @@ xhr.onload = function(){
     document.getElementById('modal').innerHTML = newModal;
     document.getElementById('project_wrap').innerHTML = newProject;
     
-    console.log(project_img);
   }
 }  

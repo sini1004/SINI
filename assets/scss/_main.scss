@@ -703,22 +703,22 @@ body {
   .project_desc {
     width: 45%;
     border: 2px solid $mainColor2;
-    background-color: $mainColor2;
-    color: $textColor1;
+    background-color: $mainColor1;
+    color: white;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     margin: 0 0 0 0.2rem;
-    padding: 5%;
+    padding: 3%;
     h3 {
       font-size: 2rem;
       font-weight: 900;
       margin-bottom: 1.5rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.5;
     }
     .project_btn {
       margin-top: 5rem;
@@ -729,10 +729,10 @@ body {
         padding: 0.5rem 1rem;
         text-transform: capitalize;
         background-color: $mainColor1;
-        border: 2px solid $mainColor3;
-        box-shadow: 3px -3px $mainColor3;
+        border: 2px solid white;
+        box-shadow: 3px -3px white;
         a {
-          color: $mainColor3;
+          color: white;
         }
         &:nth-child(1) {
           margin-right: 10px;

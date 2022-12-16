@@ -762,15 +762,14 @@ body {
 .project_wrap .project_desc {
   width: 45%;
   border: 2px solid #edebdf;
-  background-color: #edebdf;
-  color: #222;
+  background-color: #203e97;
+  color: white;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   margin: 0 0 0 0.2rem;
-  padding: 5%;
+  padding: 3%;
 }
 .project_wrap .project_desc h3 {
   font-size: 2rem;
@@ -778,7 +777,8 @@ body {
   margin-bottom: 1.5rem;
 }
 .project_wrap .project_desc p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .project_wrap .project_desc .project_btn {
   margin-top: 5rem;
@@ -790,11 +790,11 @@ body {
   padding: 0.5rem 1rem;
   text-transform: capitalize;
   background-color: #203e97;
-  border: 2px solid #f9d309;
-  box-shadow: 3px -3px #f9d309;
+  border: 2px solid white;
+  box-shadow: 3px -3px white;
 }
 .project_wrap .project_desc .project_btn button a {
-  color: #f9d309;
+  color: white;
 }
 .project_wrap .project_desc .project_btn button:nth-child(1) {
   margin-right: 10px;
