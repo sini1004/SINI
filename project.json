@@ -76,6 +76,19 @@
       "site" : "https://byahram.github.io/",
       "github" : "https://byahram.github.io/",
       "pdf" : "자료"
+    },
+    {
+      "id" : 3,
+      "url":"/assets/img/clone1.jpeg",
+      "alt" : "clone1",
+      "title" : "TODO LIST",
+      "period" : "2022.11.10 - 2022.12.01(22일)",
+      "tool" : "html,css,jquery,javascript",
+      "page" : "main+sub*4",
+      "desc" : "설명을 써주세요",
+      "site" : "https://byahram.github.io/",
+      "github" : "https://byahram.github.io/",
+      "pdf" : "자료"
     }
   ]
 }
