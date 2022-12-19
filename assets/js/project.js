@@ -48,7 +48,7 @@ xhr.onload = function(){
       newProject += `<h3>${respObj.project[i].title}</h3>`
       newProject += `<p>${respObj.project[i].desc}</p>`
       newProject += `<span>${respObj.project[i].period}</span>`
-      newProject += `<span>${respObj.project[i].page}</span>`
+      newProject += `<span>${respObj.project[i].tool}</span>`
 
       newProject += `<div class="project_btn">`
       newProject += `<button><a href="${respObj.project[i].site}" target="_blank">View</a></button>`
