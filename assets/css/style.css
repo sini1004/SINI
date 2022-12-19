@@ -541,21 +541,25 @@ body {
 }
 
 .works_title {
-  border: 1px solid red;
   max-width: 50vw;
   padding: 0 0 0 7vw;
 }
 .works_title .works_text h2 {
-  color: #f9d309;
+  color: #203e97;
   font-size: 80px;
+  line-height: 1.2;
 }
+.works_title .works_start p {
+  margin-top: 30px;
+  color: #222;
+}
+
 .works_contents {
   display: flex;
 }
 .works_contents .work {
-  width: 28%;
+  width: 32%;
   margin: 0 5%;
-  border: 2px solid #203e97;
 }
 .works_contents .work .work_site {
   padding: 0.5vh;

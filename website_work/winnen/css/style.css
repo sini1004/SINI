@@ -88,7 +88,14 @@ header span:nth-of-type(16){animation-delay: 1.6s}
   font-size: 1.5vw;
   font-family: 'S-CoreDream-4Regular';
   color: #ffffff;
-  text-align: justify;;
+  text-align: justify;
+  line-height: 1.2;
+}
+.sec1 .right .desc > span {
+  margin-top: 50px;
+  opacity: 0.8;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .sec1 .right .desc .tag{
   font-size: 1.5vw;
@@ -122,7 +129,7 @@ transition: 0.3s;
 width: 100%;
 }
 .sec1 img{
-  position: absolute;
+  /* position: absolute; */
   width: 35%;
   bottom: 12%;
   left: -3%;

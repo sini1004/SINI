@@ -469,24 +469,27 @@ body {
   min-width: 80vw;
 }
 .works_title {
-  border: 1px solid red;
   max-width: 50vw;
   padding: 0 0 0 7vw;
   .works_text {
     h2 {
-      color: $mainColor3;
+      color: $mainColor1;
       font-size: 80px;
+      line-height: 1.2;
     }
   }
   .works_start {
+    p {
+      margin-top: 30px;
+      color: $textColor1;
+    }
   }
 }
 .works_contents {
   display: flex;
   .work {
-    width: 28%;
+    width: 32%;
     margin: 0 5%;
-    border: 2px solid $mainColor1;
     .work_site {
       padding: 0.5vh;
     }
