@@ -23,7 +23,7 @@ xhr.onload = function(){
       newModal += `<div class="modal-content">`;
       newModal += `<span class="close">&times;</span>`;
       newModal += `<img src= "${respObj.explanation[i].url}" alt="${respObj.explanation[i].alt}">`;
-      newModal += `<h3><span>title</span> ${respObj.explanation[i].title}</h3>`;
+      newModal += `<h3> ${respObj.explanation[i].title}</h3>`;
       newModal += `<p><span>skill</span> ${respObj.explanation[i].skill}</p>`;
       newModal += `<div class="click_button"><button class="view"><a href="${respObj.explanation[i].view}" target="_blank">view site</a></button>
           <button class="code">view code</button>
@@ -55,7 +55,7 @@ xhr.onload = function(){
       newProject += `<button><a href="${respObj.project[i].github}" target="_blank">Github</a></button>`
 
       if(checkPdf){
-        newProject += `<button><a href="${respObj.project[i].pdf}">PDF</a></button>`
+        newProject += `<button><a href="${respObj.project[i].pdf}" target="_blank">PDF</a></button>`
       }
       // newProject += `<button><a href="${respObj.project[i].pdf}">PDF</a></button>`
       newProject += `</div>`
