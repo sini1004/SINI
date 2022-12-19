@@ -40,7 +40,7 @@
   "explanation" : [
     {
       "id" : 1,
-      "url":"assets/img/dosirak.png",
+      "url":"assets/img/dosirack.jpg",
       "alt" : "dosirak",
       "title" : "도시락통",
       "skill" : "html, css, jquery",
@@ -53,7 +53,7 @@
   "project" : [
     {
       "id" : 1,
-      "url":"assets/img/clone1.jpeg",
+      "url":"assets/img/touslesjours.jpg",
       "alt" : "clone1",
       "title" : "Tous les jours Redesign",
       "period" : "2022.11.00 - 2022.11.11(10일)",
@@ -65,15 +65,15 @@
     },
     {
       "id" : 2,
-      "url":"assets/img/chwedu.png",
+      "url":"assets/img/pwa_chwedu.jpg",
       "alt" : "clone1",
       "title" : "CHWEDU(학생이용 앱)",
       "period" : "2022.11.10 - 2022.12.01(22일)",
       "tool" : "html,css,jquery,javascript",
       "page" : "main+sub*4",
       "desc" : "PWA 프로젝트입니다.",
-      "site" : "https://sini1004.github.io/",
-      "github" : "https://sini1004.github.io/",
+      "site" : "https://sini1004.github.io/PWA_CHWEDU/",
+      "github" : "https://github.com/sini1004/PWA_CHWEDU/",
       "pdf" : "자료"
     },
     {
@@ -90,15 +90,15 @@
     },
     {
       "id" : 4,
-      "url":"assets/img/clone1.jpeg",
+      "url":"assets/img/react_lacoste.png",
       "alt" : "clone1",
       "title" : "LACOSTE(shopping)",
       "period" : "2022.11.10 - 2022.12.01(22일)",
       "tool" : "html,css,jquery,javascript",
-      "page" : "main+sub*4",
+      "page" : "main+login+sub",
       "desc" : "REACT ",
-      "site" : "https://sini1004.github.io/",
-      "github" : "https://sini1004.github.io/"
+      "site" : "https://lacosteshop.netlify.app/",
+      "github" : "https://github.com/sini1004/LACOSTE"
     }
   ]
 }

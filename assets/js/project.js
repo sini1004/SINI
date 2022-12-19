@@ -51,8 +51,8 @@ xhr.onload = function(){
       newProject += `<span>${respObj.project[i].page}</span>`
 
       newProject += `<div class="project_btn">`
-      newProject += `<button><a href="${respObj.project[i].site}">View</a></button>`
-      newProject += `<button><a href="${respObj.project[i].github}">Github</a></button>`
+      newProject += `<button><a href="${respObj.project[i].site}" target="_blank">View</a></button>`
+      newProject += `<button><a href="${respObj.project[i].github}" target="_blank">Github</a></button>`
 
       if(checkPdf){
         newProject += `<button><a href="${respObj.project[i].pdf}">PDF</a></button>`
