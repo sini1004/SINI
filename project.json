@@ -54,7 +54,7 @@
     {
       "id" : 1,
       "url":"assets/img/touslesjours.jpg",
-      "alt" : "clone1",
+      "alt" : "touslesjours",
       "title" : "Tous les jours Redesign",
       "period" : "2022.11.00 - 2022.11.11(10일)",
       "tool" : "html,css,jquery",
@@ -66,7 +66,7 @@
     {
       "id" : 2,
       "url":"assets/img/pwa_chwedu.jpg",
-      "alt" : "clone1",
+      "alt" : "pwa_chwedu",
       "title" : "CHWEDU(학생이용 앱)",
       "period" : "2022.11.10 - 2022.12.01(22일)",
       "tool" : "html,css,jquery,javascript",
@@ -91,7 +91,7 @@
     {
       "id" : 4,
       "url":"assets/img/react_lacoste.png",
-      "alt" : "clone1",
+      "alt" : "react_lacoste",
       "title" : "LACOSTE(shopping)",
       "period" : "2022.11.10 - 2022.12.01(22일)",
       "tool" : "html,css,jquery,javascript",
@@ -99,6 +99,18 @@
       "desc" : "REACT ",
       "site" : "https://lacosteshop.netlify.app/",
       "github" : "https://github.com/sini1004/LACOSTE"
+    },
+    {
+      "id" : 5,
+      "url":"assets/img/react_ott.png",
+      "alt" : "react_ott",
+      "title" : "OTT 클론코딩",
+      "period" : "2022.12.09 - 2022.12.19(7일)",
+      "tool" : "React",
+      "page" : "main+sub",
+      "desc" : "REACT ",
+      "site" : "https://shinhee-ott-hulu.netlify.app/",
+      "github" : "https://github.com/sini1004/OTT"
     }
   ]
 }
