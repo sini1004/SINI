@@ -209,8 +209,9 @@
 
 <script>
 window.onload = function() {
-  const modals = document.getElementsByClassName("modal");
-  var click = document.getElementsByClassName('box');
+  let modals = document.getElementsByClassName("modal");
+  let click = document.getElementsByClassName('box');
+    let c = '';
   for (let c = 0; c < click.length; c++){
     click[c].onclick = function() {
       modals[c].style.display = "block";
@@ -272,32 +273,6 @@ window.onload = function() {
   </div>
 </div>
 
-<div class="modal" id="modal">
-  [1]
-  <div class="modal-content">
-    <p>[1]</p>
-  </div>
-</div>
-<div class="modal">
-  <div class="modal-content">
-    <p>[1]</p>
-  </div>
-</div>
-<div class="modal">
-  <div class="modal-content">
-    <p>[1]</p>
-  </div>
-</div>
-<div class="modal">
-  <div class="modal-content">
-    <p>[1]</p>
-  </div>
-</div>
-<div class="modal">
-  <div class="modal-content">
-    <p>[1]</p>
-  </div>
-</div>
 
 
 

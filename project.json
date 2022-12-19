@@ -43,11 +43,55 @@
       "url":"assets/img/dosirack.jpg",
       "alt" : "dosirak",
       "title" : "도시락통",
-      "skill" : "html, css, jquery",
+      "skill" : "Html5, Css3, Jquery",
       "page" : "Main",
-      "view":"https://www.naver.com/",
-      "code":"https://www.naver.com/",
+      "view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "code":"https://github.com/sini1004/WebSite_Dosirak",
       "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+    },
+    {
+      "id" : 2,
+      "url":"assets/img/binggrae.jpg",
+      "alt" : "binggrae",
+      "title" : "빙그레",
+      "skill" : "Html5, Css3, Jquery",
+      "page" : "Main",
+      "view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "code":"https://github.com/sini1004/WebSite_Dosirak",
+      "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+    },
+    {
+      "id" : 3,
+      "url":"assets/img/tiretech.jpg",
+      "alt" : "tiretech",
+      "title" : "타이어테크",
+      "skill" : "Html5, Css3, Jquery",
+      "page" : "main + sub*3",
+      "view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "code":"https://github.com/sini1004/WebSite_Dosirak",
+      "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+    },
+    {
+      "id" : 4,
+      "url":"assets/img/urban.jpg",
+      "alt" : "urban",
+      "title" : "어반런드렛",
+      "skill" : "Html5, Css3, Jquery",
+      "page" : "Main",
+      "view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "code":"https://github.com/sini1004/WebSite_Dosirak",
+      "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+    },
+    {
+      "id" : 5,
+      "url":"assets/img/kakao.jpg",
+      "alt" : "kakao",
+      "title" : "카카오프렌즈",
+      "skill" : "Html5, Css3, Jquery",
+      "page" : "Main",
+      "view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "code":"https://github.com/sini1004/WebSite_Dosirak",
+      "comment" : "모바일사이즈로 제작한 모바일 웹 사이트입니다."
     }
   ],
   "project" : [
@@ -57,7 +101,7 @@
       "alt" : "touslesjours",
       "title" : "Tous les jours Redesign",
       "period" : "2022.11.00 - 2022.11.11(10일)",
-      "tool" : "html,css,jquery",
+      "tool" : "Html5, Css3, jquery",
       "desc" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 작업을 진행한 뚜레쥬르 사이트입니다.&nbsp; 자바스크립트 라이브러리인 jQuery를 이용했고, 이미지 슬라이드를 구현하기 위해 Swipper를 사용하여 구현하였습니다.",
       "site" : "https://sini1004.github.io/",
       "github" : "https://sini1004.github.io/"

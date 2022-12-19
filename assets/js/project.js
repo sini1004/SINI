@@ -29,6 +29,7 @@ xhr.onload = function(){
           <button class="code">view code</button>
         </div>`;
       newModal += `</div>`;
+
     }
 
   
