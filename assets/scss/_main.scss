@@ -780,9 +780,23 @@ body {
   .contact_me {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px 0;
+    padding: 70px 0;
   }
   .contact_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    h4 {
+      font: {
+        size: 3rem;
+        family: "Abril Fatface", cursive;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -791,7 +805,7 @@ figure.snip1436 {
   overflow: hidden;
   margin: 10px;
   min-width: 180px;
-  max-width: 380px;
+  max-width: 320px;
   width: 100%;
   color: $textColor1;
   text-align: left;
@@ -799,6 +813,7 @@ figure.snip1436 {
   display: flex;
   justify-content: center;
   align-items: center;
+  word-break: inherit;
 }
 figure.snip1436 * {
   -webkit-box-sizing: border-box;
@@ -825,6 +840,9 @@ figure.snip1436 figcaption {
   z-index: 1;
   opacity: 0;
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 figure.snip1436 h3,
 figure.snip1436 p {
@@ -850,6 +868,7 @@ figure.snip1436 .read-more {
   color: $mainColor1;
   display: inline-block;
   text-align: center;
+  margin-top: 20px;
 }
 figure.snip1436 .read-more:hover {
   background-color: $mainColor1;
