@@ -776,19 +776,29 @@ body {
   }
 }
 
+.contact {
+  .contact_me {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+  }
+  .contact_text {
+  }
+}
+
 figure.snip1436 {
-  font-family: "Raleway", Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  max-height: 230px;
+  min-width: 180px;
+  max-width: 380px;
   width: 100%;
-  color: #ffffff;
+  color: $textColor1;
   text-align: left;
-  background-color: #07090c;
-  font-size: 16px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 figure.snip1436 * {
   -webkit-box-sizing: border-box;
@@ -797,7 +807,7 @@ figure.snip1436 * {
   transition: all 0.35s ease;
 }
 figure.snip1436 img {
-  max-width: 100%;
+  max-width: 200px;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
   backface-visibility: hidden;
@@ -819,28 +829,31 @@ figure.snip1436 figcaption {
 figure.snip1436 h3,
 figure.snip1436 p {
   line-height: 1.5em;
+  text-align: center;
 }
 figure.snip1436 h3 {
+  font-size: 1.2em;
   margin: 0;
   font-weight: 800;
   text-transform: uppercase;
 }
 figure.snip1436 p {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 500;
-  margin: 0 0 15px;
+  margin: 20px 0 15px;
 }
 figure.snip1436 .read-more {
-  border: 2px solid #ffffff;
+  border: 2px solid $mainColor1;
   padding: 0.5em 1em;
-  font-size: 0.8em;
+  font-size: 1em;
   text-decoration: none;
-  color: #ffffff;
+  color: $mainColor1;
   display: inline-block;
+  text-align: center;
 }
 figure.snip1436 .read-more:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $mainColor1;
+  color: white;
 }
 figure.snip1436:hover img,
 figure.snip1436.hover img {
