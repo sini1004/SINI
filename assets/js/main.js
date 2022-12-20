@@ -8,7 +8,6 @@ document.querySelectorAll(".nav ul li a").forEach(li => {
   })
 })
 
-
 $('.ham').click(function () {
   $('#mNav').toggleClass('active')
 });
@@ -43,4 +42,3 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
-
