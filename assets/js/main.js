@@ -34,3 +34,11 @@ setTimeout(function () {
       stagger: 0.1
   })
 }, 2000)
+
+
+// section6
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

@@ -776,6 +776,112 @@ body {
   }
 }
 
+figure.snip1436 {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #07090c;
+  font-size: 16px;
+}
+figure.snip1436 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1436 img {
+  max-width: 100%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  backface-visibility: hidden;
+}
+figure.snip1436 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(0.5) translate(0%, -50%);
+  transform: scale(0.5) translate(0%, -50%);
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  z-index: 1;
+  opacity: 0;
+  padding: 0 30px;
+}
+figure.snip1436 h3,
+figure.snip1436 p {
+  line-height: 1.5em;
+}
+figure.snip1436 h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+figure.snip1436 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+figure.snip1436 .read-more {
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+figure.snip1436 .read-more:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+figure.snip1436:hover img,
+figure.snip1436.hover img {
+  -webkit-animation: snip1436 0.45s linear forwards;
+  animation: snip1436 0.45s linear forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+figure.snip1436:hover figcaption,
+figure.snip1436.hover figcaption {
+  -webkit-transform: scale(1) translate(0, -50%);
+  transform: scale(1) translate(0, -50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+@-webkit-keyframes snip1436 {
+  50% {
+    -webkit-transform: scale(0.8) translateX(0%);
+    transform: scale(0.8) translateX(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateX(-150%);
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.5;
+  }
+}
+@keyframes snip1436 {
+  50% {
+    -webkit-transform: scale(0.8) translateX(0%);
+    transform: scale(0.8) translateX(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateX(-150%);
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.5;
+  }
+}
+
 /* text_row */
 .text_row {
   width: 100vw;
