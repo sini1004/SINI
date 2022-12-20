@@ -483,7 +483,7 @@ body {
 .section2 .section2_wrap .section2_introduce .introduce_about .item4 {
   grid-column-end: span 2;
   background-color: #80c7fe;
-  background: url(/assets/img/sky.JPG);
+  background: url(assets/img/sky.JPG);
   background-position: center;
   border: 2px solid #203e97;
   border-top: 0;
