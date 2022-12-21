@@ -6,7 +6,7 @@
 }
 
 body{ 
-  background: #5b4a42; 
+  background: #B6D8EB; 
 }
 
 /* header */
@@ -19,7 +19,7 @@ header h1{
   position: absolute;
   top: 15%;
   left: 5%;
-  color: #cbac8f;
+  color: #003CA6;
   font-size: 5.5vw;
   font-family: 'SBAggroB';
 }
@@ -110,7 +110,7 @@ display: inline-block;
 margin-top: 10%;
 font-size: 1.8vw;
 font-weight: 600;
-color: #cbac8f;
+color: #003CA6;
 padding-bottom: 1%;
 } 
 .sec1 .right  a:before{
@@ -118,7 +118,7 @@ content: '';
 position: absolute;
 width: 0%;
 height: 2px;
-background: #cbac8f;
+background: #003CA6;
 left:50%; transform: translateX(-50%);
 bottom:0;
 transition: 0.3s;
