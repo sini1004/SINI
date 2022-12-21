@@ -12,7 +12,7 @@ body{
 /* header */
 header{
   height: 100vh;
-  background: url(/website_work/winnen/img/winnen_bg.jpg) no-repeat right bottom;
+  background: url(/website_work/o2urea/img/o2uera_bg.png) no-repeat right bottom;
   background-size: 70%;
 }
 header h1{
@@ -85,12 +85,13 @@ header span:nth-of-type(16){animation-delay: 1.6s}
 .sec1 .right .desc p{ 
   font-size: 1.3vw;
   font-family: 'S-CoreDream-4Regular';
-  color: #ffffff;
+  color: #222;
   text-align: justify;
   line-height: 1.2;
 }
 .sec1 .right .desc > span {
   margin-top: 50px;
+  color: #003CA6;
   opacity: 0.8;
   font-weight: bold;
   text-decoration: underline;
@@ -98,7 +99,7 @@ header span:nth-of-type(16){animation-delay: 1.6s}
 .sec1 .right .desc .tag{
   font-size: 1.3vw;
   font-family: 'S-CoreDream-4Regular';
-  color: #ffffff;
+  color: #222;
   margin-top: 5%;
 }
 .sec1 .right .desc .tag span{
@@ -113,7 +114,7 @@ font-weight: 600;
 color: #003CA6;
 padding-bottom: 1%;
 } 
-.sec1 .right  a:before{
+.sec1 .right a:before{
 content: '';
 position: absolute;
 width: 0%;
@@ -123,7 +124,7 @@ left:50%; transform: translateX(-50%);
 bottom:0;
 transition: 0.3s;
 }
-.sec1 .right  a:hover:before{
+.sec1 .right a:hover:before{
 width: 100%;
 }
 .sec1 img{
