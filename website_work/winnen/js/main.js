@@ -11,7 +11,7 @@ $(window).scroll(function(){
   if(scrollTop>=0){
     $("header").addClass("show");
   }
-  for(let i=1; i<=2; i++){
+  for(let i=1; i<=1; i++){
     if(scrollTop >= $("#section"+i).offset().top - $(window).height()/2){
       $("#section"+i).addClass("show");
     }
