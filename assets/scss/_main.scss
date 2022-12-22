@@ -428,7 +428,7 @@ body {
         .item4 {
           grid-column-end: span 2;
           background-color: #80c7fe;
-          background: url(/assets/img/sky.JPG);
+          background-image: url(/assets/img/sky.JPG);
           background-position: center;
           @include border();
         }
