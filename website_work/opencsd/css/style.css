@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{ 
+  background: #B6D8EB; 
+}
+
+/* header */
+header{
+  height: 100vh;
+  background: url(/website_work/opencsd/img/opencsd_bg.jpeg) no-repeat right bottom;
+  background-size: 70%;
+}
+header h1{
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: #003CA6;
+  font-size: 5.5vw;
+  font-family: 'SBAggroB';
+}
+header span {
+  display: inline-block;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: spanShow 0.3s linear forwards;;
+}
+@keyframes  spanShow {
+  to{opacity: 1; transform: translateY(0);}
+}
+header span:nth-of-type(2){animation-delay: 0.2s}
+header span:nth-of-type(3){animation-delay: 0.3s}
+header span:nth-of-type(4){animation-delay: 0.4s}
+header span:nth-of-type(5){animation-delay: 0.5s}
+header span:nth-of-type(6){animation-delay: 0.6s}
+header span:nth-of-type(7){animation-delay: 0.7s}
+header span:nth-of-type(8){animation-delay: 0.8s}
+header span:nth-of-type(9){animation-delay: 0.9s}
+header span:nth-of-type(10){animation-delay: 1s}
+header span:nth-of-type(11){animation-delay: 1.1s}
+header span:nth-of-type(12){animation-delay: 1.2s}
+header span:nth-of-type(13){animation-delay: 1.3s}
+header span:nth-of-type(14){animation-delay: 1.4s}
+header span:nth-of-type(15){animation-delay: 1.5s}
+header span:nth-of-type(16){animation-delay: 1.6s}
+
+
+#section1 {
+  height: 100vh;
+}
+/* sec1 */
+.sec1 {
+  height: 100vh;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8vw 3vw 3vw 3vw;
+
+}
+.sec1 h1{
+  color: #ffffff;
+  font-size: 3.5vw;
+  font-family: 'S-CoreDream-4Regular';
+  font-weight: 600;
+  margin-right: 7%;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.sec1 .right{
+  width: 65%;
+  padding-left: 5%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.6s ease-in-out 0.3s;
+}
+.sec1 .right .desc{
+  display: flex;
+  flex-direction: column; 
+}
+.sec1 .right .desc p{ 
+  font-size: 1.3vw;
+  font-family: 'S-CoreDream-4Regular';
+  color: #222;
+  text-align: justify;
+  line-height: 1.2;
+}
+.sec1 .right .desc > span {
+  margin-top: 50px;
+  color: #003CA6;
+  opacity: 0.8;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.sec1 .right .desc .tag{
+  font-size: 1.3vw;
+  font-family: 'S-CoreDream-4Regular';
+  color: #222;
+  margin-top: 5%;
+}
+.sec1 .right .desc .tag span{
+  margin-right: 3%;
+}
+.sec1 .right  a{
+position: relative;
+display: inline-block;
+margin-top: 10%;
+font-size: 1.8vw;
+font-weight: 600;
+color: #003CA6;
+padding-bottom: 1%;
+} 
+.sec1 .right a:before{
+content: '';
+position: absolute;
+width: 0%;
+height: 2px;
+background: #003CA6;
+left:50%; transform: translateX(-50%);
+bottom:0;
+transition: 0.3s;
+}
+.sec1 .right a:hover:before{
+width: 100%;
+}
+.sec1 img{
+  /* position: absolute; */
+  width: 35%;
+  bottom: 12%;
+  left: -3%;
+  opacity: 0;
+  transition: 0.7s ease-in-out 0.6s;
+}
+#section1.show .sec1 h1{opacity: 1;animation: slideInLeft 0.6s;}
+#section1.show .right {opacity: 1; animation: slideInRight 0.6s 0.3s;}
+#section1.show .sec1 img{opacity: 1; animation: fadeInUp 0.7s 0.6s;}
+
+
+/* #section2 {
+  height: 100vh;
+} */
