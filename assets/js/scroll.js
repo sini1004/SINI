@@ -1,6 +1,7 @@
 
 	window.addEventListener("load", function () {
 	gsap.registerPlugin(ScrollTrigger);
+	
 
 	const pageContainer = document.querySelector("#main");
 	pageContainer.setAttribute("data-scroll-container", "");
