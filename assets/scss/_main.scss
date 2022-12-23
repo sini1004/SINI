@@ -472,11 +472,11 @@ body {
   align-items: center;
 }
 .section3 .pin-wrap > div {
-  min-width: 80vw;
+  min-width: 45vw;
 }
 .works_title {
-  max-width: 50vw;
-  padding: 0 0 0 7vw;
+  min-width: 40vw;
+  padding: 0 0 0 3vw;
   .works_text {
     h2 {
       color: $mainColor1;
@@ -492,24 +492,18 @@ body {
     }
   }
 }
+.work {
+  width: 80%;
+  .work_site {
+    padding: 0.5vh;
+    img {
+      width: 90%;
+    }
+  }
+}
 .works_contents {
   position: relative;
   display: flex;
-  .work {
-    width: 50%;
-    .work_site {
-      padding: 0.5vh;
-    }
-  }
-  .work1 {
-  }
-  .work2 {
-  }
-  .work3 {
-  }
-}
-.slideinleft {
-  margin-left: -700px;
 }
 
 /* /////////////// section4 /////////////// */
