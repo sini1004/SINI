@@ -120,14 +120,14 @@
     },
     {
       "id" : 3,
-      "url":"assets/img/clone1.jpeg",
+      "url":"assets/img/todolist.png",
       "alt" : "todolist",
       "title" : "React_TODO LIST",
       "period" : "2022.11.14 - 2022.11.23(10일)",
       "tool" : "React, css3",
       "desc" : "투두리스트에 투두아이템을 추가, 삭제할 수 있고, 좌측상단 버튼을 통해 다크 모드를 설정할 수 있습니다. 해당 투두 아이템을 완료했는지에 따라서 필터링도 가능합니다.",
       "site" : "https://shinhee-todo.netlify.app/",
-      "github" : "https://sini1004.github.io/"
+      "github" : "https://github.com/sini1004/React_TODO"
     },
     {
       "id" : 4,
