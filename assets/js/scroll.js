@@ -1,4 +1,3 @@
-
 	window.addEventListener("load", function () {
 	gsap.registerPlugin(ScrollTrigger);
 	
@@ -41,6 +40,7 @@
 		let pinWrap = horizontalSection.querySelector(".pin-wrap");
 		let pinWrapWidth = pinWrap.offsetWidth;
 		let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+		
 		gsap.to(pinWrap, {
 			scrollTrigger: {
 				scroller: "[data-scroll-container]",
@@ -54,9 +54,33 @@
 			x: -horizontalScrollLength,
 			ease: "none"
 		});
+
 	});
+
+//websitework
+	// let websiteWork = document.querySelectorAll(".webstie_wrok");
+	// websiteWork.forEach(()=>{
+	// 	let siteWork = websiteWork.querySelector(".site_work");
+	// 	gsap.to(siteWork,{
+	// 		scrollTrigger: {
+	// 			trigger:'site_work',
+	// 			scroller: "[data-scroll-container]",
+	// 			scrub: true,
+	// 			trigger: horizontalSection,
+	// 			pin: true,
+	// 			start: "top top",
+	// 			end: 'top 50%',
+	// 			invalidateOnRefresh: true
+	// 		},
+	// 		x: -horizontalScrollLength,
+	// 		ease: "none"
+	// 	});
+	// })
+
+	
 	ScrollTrigger.addEventListener("refresh", () => scroller.update());
 	ScrollTrigger.refresh();
+
 });
 
 // var $sections = document.querySelectorAll(".horizon_box");

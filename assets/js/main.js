@@ -1,3 +1,4 @@
+
 //menu
 document.querySelectorAll(".nav ul li a").forEach(li => {
   li.addEventListener("click", e => {
@@ -14,8 +15,6 @@ $('.ham').click(function () {
 $('.mNav_cont ul li').click(function () {
   $('#mNav').removeClass('active')
 });
-
-
 
 //section1 
 $(".split").each(function () {

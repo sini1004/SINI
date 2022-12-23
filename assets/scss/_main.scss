@@ -465,15 +465,15 @@ body {
   background-color: $mainColor2;
   padding: 4vw;
 }
-// .section3 .pin-wrap {
-//   height: 100vh;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-// }
-// .section3 .pin-wrap > div {
-//   min-width: 80vw;
-// }
+.section3 .pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section3 .pin-wrap > div {
+  min-width: 80vw;
+}
 .works_title {
   max-width: 50vw;
   padding: 0 0 0 7vw;
@@ -495,9 +495,8 @@ body {
 .works_contents {
   position: relative;
   display: flex;
-  flex-direction: column;
   .work {
-    width: 32%;
+    width: 50%;
     .work_site {
       padding: 0.5vh;
     }
