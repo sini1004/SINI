@@ -136,7 +136,7 @@
       "title" : "React_Shopping(LACOSTE)",
       "period" : "2022.11.28 - 2022.12.06(9일)",
       "tool" : "json-server, Router, React-Bootstrap",
-      "desc" : "데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 등의 정보를 넣어주었습니다. fetch함수를 이용해 API호출을 하였으며, 로그인이 되었을 때에만 상품의 상세페이지를 볼 수 있도록 하였고, 검색 기능을 구현하였습니다. React-Bootstrap과 미디어쿼리를 사용해 반응형으로 작업흐g였습니다.",
+      "desc" : "데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 등의 정보를 넣어주었습니다. fetch함수를 이용해 API호출을 하였으며, 로그인이 되었을 때에만 상품의 상세페이지를 볼 수 있도록 하였고, 검색 기능을 구현하였습니다. React-Bootstrap과 미디어쿼리를 사용해 반응형으로 작업하였습니다.",
       "site" : "https://lacosteshop.netlify.app/",
       "github" : "https://github.com/sini1004/LACOSTE"
     },
