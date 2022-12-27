@@ -546,8 +546,7 @@ body {
 }
 
 .works_title {
-  min-width: 40vw;
-  padding: 0 0 0 3vw;
+  min-width: 60vw;
 }
 .works_title .works_text h2 {
   color: #203e97;
@@ -561,7 +560,7 @@ body {
 }
 
 .work {
-  width: 80%;
+  width: 70%;
 }
 .work .work_site {
   padding: 0.5vh;
@@ -573,6 +572,7 @@ body {
 .works_contents {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 /* /////////////// section4 /////////////// */

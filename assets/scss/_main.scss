@@ -475,8 +475,7 @@ body {
   min-width: 45vw;
 }
 .works_title {
-  min-width: 40vw;
-  padding: 0 0 0 3vw;
+  min-width: 60vw;
   .works_text {
     h2 {
       color: $mainColor1;
@@ -493,7 +492,7 @@ body {
   }
 }
 .work {
-  width: 80%;
+  width: 70%;
   .work_site {
     padding: 0.5vh;
     img {
@@ -504,6 +503,7 @@ body {
 .works_contents {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 /* /////////////// section4 /////////////// */

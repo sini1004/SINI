@@ -182,21 +182,25 @@
       </div>
     </div>
     <div>
-      <div class="work work2">
-        <a href="/website_work/o2urea/index.html" target="_blank">
-          <div class="work_site">
-            <img src="assets/img/works2_main.png" alt="오투요소수">
-          </div>
-        </a>
+      <div class="works_contents">
+        <div class="work work2">
+          <a href="/website_work/o2urea/index.html" target="_blank">
+            <div class="work_site">
+              <img src="assets/img/works2_main.png" alt="오투요소수">
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <div>
-      <div class="work work3">
-        <a href="/website_work/opencsd/index.html" target="_blank">
-          <div class="work_site">
-            <img src="assets/img/works3_main.png" alt="OPENCSD">
-          </div>
-        </a>
+      <div class="works_contents">
+        <div class="work work3">
+          <a href="/website_work/opencsd/index.html" target="_blank">
+            <div class="work_site">
+              <img src="assets/img/works3_main.png" alt="OPENCSD">
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -223,11 +227,12 @@
 window.onload = function() {
   let modals = document.getElementsByClassName("modal");
   let click = document.getElementsByClassName('box');
-    let c = '';
+  let c = [];
   for (let c = 0; c < click.length; c++){
     click[c].onclick = function() {
       modals[c].style.display = "block";
       console.log(modals[c]);
+      console.log(click)
     }
   }
 };

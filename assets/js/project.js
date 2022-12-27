@@ -4,7 +4,7 @@ const xhr = new XMLHttpRequest();
 xhr.open('get','project.json',true);   //요청을 준비하다
 xhr.send(null);	       //요청을 전송한다
 
-xhr.onload = function(){
+xhr.onload = function(c){
   
    if(xhr.status == 200){ //서버 응답이 정상이라면 (Http status code) 
     respObj = JSON.parse(xhr.responseText);
@@ -15,6 +15,17 @@ xhr.onload = function(){
       newContent += `<div class="click">Click</div><img src= "${respObj.site[i].url}" alt="${respObj.site[i].alt}">
       `;
       newContent += `</div>`;
+      
+
+      let click = document.getElementsByClassName('box');
+      let c = '';
+      let modals = document.getElementsByClassName("modal");
+      let modal = document.getElementById("modal");
+      for (let c = 0; c < click.length; c++){
+          click.onclick = function() {
+            modal.style.display = "block";
+          }
+        }
     }
 
 
@@ -47,8 +58,8 @@ xhr.onload = function(){
 
       newProject += `<h3>${respObj.project[i].title}</h3>`
       newProject += `<p>${respObj.project[i].desc}</p>`
-      newProject += `<span>${respObj.project[i].period}</span>`
-      newProject += `<span>${respObj.project[i].tool}</span>`
+      newProject += `<span>제작기간 : ${respObj.project[i].period}</span>`
+      newProject += `<span>기술스택 : ${respObj.project[i].tool}</span>`
 
       newProject += `<div class="project_btn">`
       newProject += `<button><a href="${respObj.project[i].site}" target="_blank">View</a></button>`
