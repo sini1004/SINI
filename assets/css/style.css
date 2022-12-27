@@ -322,7 +322,7 @@ body {
   word-wrap: break-word;
   opacity: 0;
   animation: textup 1s ease-in-out forwards;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 @keyframes textup {

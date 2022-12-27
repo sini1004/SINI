@@ -124,7 +124,7 @@
       "title" : "CHWEDU(학생이용 앱)",
       "period" : "2022.11.10 - 2022.12.01(22일)",
       "tool" : "html5, css3, jquery, javascript",
-      "desc" : "PWA 프로젝트입니다.",
+      "desc" : "로그인 시 '@'를 포함한 이메일 형식의 아이디와 5자리 이상 비밀번호를 입력해야 하는 조건을 붙였으며, 로그인시 입력했던 이메일의 '@'앞 자리를 아이디로 인식하여 메인에서 볼 수 있습니다. jsQR 모듈을 이용하여 QR인식을 할 수 있으며, 투두리스트에 할 일 추가, 삭제, 수정을 할 수 있습니다. Math.random()를 이용해 랜덤으로 단어를 볼 수 있게 하였습니다.",
       "site" : "https://sini1004.github.io/PWA_CHWEDU/",
       "github" : "https://github.com/sini1004/PWA_CHWEDU/",
       "pdf" : "assets/pdf/CHWEDU.pdf"

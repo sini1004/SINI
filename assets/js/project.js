@@ -6,7 +6,7 @@ xhr.send(null);	       //요청을 전송한다
 
 xhr.onload = function(c){
   
-   if(xhr.status == 200){ //서버 응답이 정상이라면 (Http status code) 
+  if(xhr.status == 200){ //서버 응답이 정상이라면 (Http status code) 
     respObj = JSON.parse(xhr.responseText);
 
     let newContent = '';

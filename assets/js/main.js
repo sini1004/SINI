@@ -27,12 +27,12 @@ $(".split").each(function () {
 
 setTimeout(function () {
   gsap.to(".split span", {
-      duration: 0.4,
+      duration: 0.5,
       opacity: 1,
       y: 0,
       stagger: 0.1
   })
-}, 2000)
+}, 1000)
 
 
 // section6
