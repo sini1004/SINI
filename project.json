@@ -4,7 +4,19 @@
       "id" : 1,
       "title":"dosirak",
       "url":"assets/img/dosirak.png",
-      "alt" : "dosirak"
+      "alt" : "dosirak",
+      "explanation": [
+        {
+          "url":"assets/img/dosirack.jpg",
+          "alt" : "dosirak",
+          "title" : "도시락통",
+          "skill" : "html5, css3, jquery",
+          "page" : "Main",
+          "view":"https://sini1004.github.io/WebSite_Dosirak/",
+          "code":"https://github.com/sini1004/WebSite_Dosirak",
+          "comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+        }
+      ]
     },
     {
       "id" : 2,
@@ -162,6 +174,18 @@
       "desc" : "react-router를 사용해 SPA형태로 구성되었습니다.  axios를 활용해 데이터를 불러왔으며, async, await를 사용해 각각의 api를 비동기적으로 불러왔습니다. ",
       "site" : "https://shinhee-ott-hulu.netlify.app/",
       "github" : "https://github.com/sini1004/OTT"
+    },
+    {
+      "id" : 6,
+      "url":"assets/img/react_ott.png",
+      "alt" : "veu_todo",
+      "title" : "vue_TODO",
+      "period" : "2022.12.26 - 2022.12.30(5일)",
+      "tool" : "Vue, TransitionGroup Component, Modal Component",
+      "page" : "main",
+      "desc" : "vue를 학습하며 만든 Todo List 입니다. localStorage를 사용하여 새로고침해도 등록한 리스트가 남아있을 수 있게 하였으며, TransitionGroup Component를 사용하여 애니메이션을 적용하였습니다. Madal Component를 사용하여 input창에 아무것도 입력하지 않고 추가하였을 때 Modal이 뜰 수 있도록 하였습니다.",
+      "site" : "https://shinhee-vue-todo.netlify.app/",
+      "github" : "https://github.com/sini1004/Vue_TODO"
     }
   ]
 }
