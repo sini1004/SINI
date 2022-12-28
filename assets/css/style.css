@@ -679,6 +679,14 @@ body {
 }
 
 /* Modal Content/Box */
+.click_block {
+  display: block;
+}
+
+.click_none {
+  display: none;
+}
+
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */

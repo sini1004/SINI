@@ -220,7 +220,24 @@
 </section>
 </div>
 
+
 <script>
+
+window.onload = function() {
+  const boxwrap = document.getElementById('site_img');
+  const boxcount = boxwrap.childElementCount;
+  const modal_wrap = document.getElementsByClassName('modal');
+  const boxclick = document.getElementsByClassName('box');
+  
+  for(let i = 0; i < boxcount; i++){
+    boxclick[i].onclick = function() {
+      modal_wrap.classList.add('click_block')
+    };
+  }
+}
+  
+  </script>
+<!-- <script>
 window.onload = function() {
   let modals = document.getElementsByClassName("modal");
   let click = document.getElementsByClassName('box');
@@ -231,7 +248,7 @@ window.onload = function() {
     }
   }
 };
-</script>
+</script> -->
 
 
 
@@ -308,53 +325,13 @@ window.onload = function() {
 
 </main>
 
+
 <!-- 첫 번째 Modal -->
 <div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
+  <!-- <div class="modal-content">
     <span class="close">&times;</span>                         
     <p>웹 제작 상세 설명</p>
-  </div>
-</div>
-<!-- 첫 번째 Modal -->
-<div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>                         
-    <p>웹 제작 상세 설명</p>
-  </div>
-</div>
-<!-- 첫 번째 Modal -->
-<div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>                         
-    <p>웹 제작 상세 설명</p>
-  </div>
-</div>
-<!-- 첫 번째 Modal -->
-<div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>                         
-    <p>웹 제작 상세 설명</p>
-  </div>
-</div>
-<!-- 첫 번째 Modal -->
-<div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>                         
-    <p>웹 제작 상세 설명</p>
-  </div>
-</div>
-<!-- 첫 번째 Modal -->
-<div class="modal" id="modal">
-  <!-- 첫 번째 Modal의 내용 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>                         
-    <p>웹 제작 상세 설명</p>
-  </div>
+  </div> -->
 </div>
 
 <script defer src="assets/js/main.js"></script>
@@ -369,7 +346,7 @@ window.onload = function() {
 
 <script defer src="assets/js/scroll.js"></script>
 <script defer src="assets/js/project.js"></script>
-<script defer src="assets/js/modal.js"></script>
+<!-- <script defer src="assets/js/modal.js"></script> -->
 
 <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
