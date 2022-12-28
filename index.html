@@ -227,11 +227,14 @@ window.onload = function() {
   const boxwrap = document.getElementById('site_img');
   const boxcount = boxwrap.childElementCount;
   const modal_wrap = document.getElementsByClassName('modal');
+  const modal_cont = document.getElementsByClassName('modal-content');
   const boxclick = document.getElementsByClassName('box');
   
   for(let i = 0; i < boxcount; i++){
     boxclick[i].onclick = function() {
-      modal_wrap.classList.add('click_block')
+      // modal_cont.classList.add('click_block')
+      console.log('클릭',modal_cont[i]);
+      // modal_cont.classList.toggle('on'); 
     };
   }
 }
