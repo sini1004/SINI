@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 	<title>SINI</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -229,7 +229,7 @@
 window.onload = function() {
   const boxwrap = document.getElementById('site_img');
   const boxcount = boxwrap.childElementCount;
-  const modal_wrap = document.getElementsByClassName('modal');
+  const modal_wrap = document.getElementsByClassName('modal-wrap');
   const modal_cont = document.getElementsByClassName('modal-content');
   const boxclick = document.getElementsByClassName('box');
   
@@ -237,7 +237,7 @@ window.onload = function() {
     boxclick[i].onclick = function() {
       // modal_cont.classList.add('click_block')
       console.log('클릭',modal_cont[i]);
-      // modal_cont.classList.toggle('on'); 
+      modal_wrap.classList.add('click_block'); 
     };
   }
 }
