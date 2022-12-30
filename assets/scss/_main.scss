@@ -429,8 +429,9 @@ body {
         .item4 {
           grid-column-end: span 2;
           // background-color: #80c7fe;
-          background-image: url("assets/img/sky.png");
+          background-image: url("/assets/img/bluesky.jpeg");
           background-position: center;
+          background-size: cover;
           @include border();
         }
         .item5 {
