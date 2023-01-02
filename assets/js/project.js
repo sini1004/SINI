@@ -10,7 +10,6 @@ xhr.onload = function(c){
     respObj = JSON.parse(xhr.responseText);
 
     let newContent = '';
-    let newModal = '';
     for(let i = 0; i < respObj.site.length; i++){
       newContent += `<div class="box">`;
       newContent += `<div class="click clickbtn">Click</div><img src= "${respObj.site[i].url}" alt="${respObj.site[i].alt}">
@@ -18,27 +17,25 @@ xhr.onload = function(c){
       newContent += `</div>`;
 
 
-      newModal += `<div class="modal-wrap">`;
+      // newModal += `<div class="modal-wrap">`;
+      //   newModal += `<div class="modal-content">`;
+      //   newModal += `<span class="close">&times;</span>`;
+      //   newModal += `<p>${respObj.site[i].e_title}</p>`;
+      //   newModal += `<img src= "${respObj.site[i].e_url}" alt="${respObj.site[i].alt}">`;
+      //   newModal += `</div>`;
+      // newModal += `</div>`;
+    }
+
+    let newModal = '';
+    for(let i = 0; i < respObj.site.length; i++){
+      // newModal += `<div class="modal-wrap">`;
         newModal += `<div class="modal-content">`;
         newModal += `<span class="close">&times;</span>`;
         newModal += `<p>${respObj.site[i].e_title}</p>`;
         newModal += `<img src= "${respObj.site[i].e_url}" alt="${respObj.site[i].alt}">`;
         newModal += `</div>`;
-      newModal += `</div>`;
+      // newModal += `</div>`;
     }
-
-    // let newModal = '';
-    // for(let i = 0; i < respObj.explanation.length; i++){
-    //   newModal += `<div class="modal-content">`;
-    //   newModal += `<span class="close">&times;</span>`;
-    //   newModal += `<img src= "${respObj.explanation[i].url}" alt="${respObj.explanation[i].alt}">`;
-    //   newModal += `<h3> ${respObj.explanation[i].title}</h3>`;
-    //   newModal += `<p><span>skill</span> ${respObj.explanation[i].skill}</p>`;
-    //   newModal += `<div class="click_button"><button class="view"><a href="${respObj.explanation[i].view}" target="_blank">view site</a></button>
-    //       <button class="code">view code</button>
-    //     </div>`;
-    //   newModal += `</div>`;
-    // }
 
   
 

@@ -173,7 +173,7 @@
     <div>
       <div class="works_contents">
         <div class="work work1">
-          <a href="/website_work/winnen/index.html" target="_blank">
+          <a href="../website_work/winnen/index.html" target="_blank">
             <div class="work_site">
               <img src="assets/img/works1_main.png" alt="위넌스터디카페">
             </div>
@@ -229,7 +229,7 @@
 window.onload = function() {
   const boxwrap = document.getElementById('site_img');
   const boxcount = boxwrap.childElementCount;
-  const boxclick = document.getElementsByClassName('click');
+  const boxclick = document.getElementsByClassName('box');
   const modal = document.getElementsByClassName('modal');
   const modal_wrap = document.getElementsByClassName('modal-wrap');
   const modal_cont = document.getElementsByClassName('modal-content');
@@ -238,26 +238,13 @@ window.onload = function() {
     boxclick[i].onclick = function() {
       // modal_cont.classList.add('click_block')
       console.log('클릭', modal_cont[i]);
-      console.log('모달', modal);
-      modal.className += 'click_block'; 
+      // modal_cont.className += 'click_block'; 
     };
   }
 }
   
   </script>
-<!-- <script>
-window.onload = function() {
-  let modals = document.getElementsByClassName("modal");
-  let click = document.getElementsByClassName('box');
-  let c = '';
-  for (let c = 0; c < click.length; c++){
-    click[c].onclick = function() {
-      modals[c].style.display = "block";
-    }
-  }
-};
-</script> -->
-
+  
 
 
 <!-- section5 -->
@@ -354,7 +341,7 @@ window.onload = function() {
 
 <script defer src="assets/js/scroll.js"></script>
 <script defer src="assets/js/project.js"></script>
-<!-- <script defer src="assets/js/modal.js"></script> -->
+<script defer src="assets/js/modal.js"></script>
 
 <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
