@@ -117,7 +117,7 @@
     },
     {
       "id" : 4,
-      "url":"assets/img/react_lacoste.png",
+      "url":"assets/img/lacoste.jpg",
       "alt" : "react_lacoste",
       "title" : "React_Shopping(LACOSTE)",
       "period" : "2022.11.28 - 2022.12.06(9일)",
@@ -128,7 +128,7 @@
     },
     {
       "id" : 5,
-      "url":"assets/img/react_ott.png",
+      "url":"assets/img/hulu.jpg",
       "alt" : "react_ott",
       "title" : "React_OTT 클론코딩",
       "period" : "2022.12.09 - 2022.12.19(7일)",
