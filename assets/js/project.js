@@ -33,6 +33,11 @@ xhr.onload = function(c){
         newModal += `<span class="close">&times;</span>`;
         newModal += `<p>${respObj.site[i].e_title}</p>`;
         newModal += `<img src= "${respObj.site[i].e_url}" alt="${respObj.site[i].alt}">`;
+        newModal += `<span class="e_skill">${respObj.site[i].e_skill}</span>`;
+        newModal += `<span class="e_page">${respObj.site[i].e_page}</span>`;
+        newModal += `<span class="e_comment">${respObj.site[i].e_comment}</span>`;
+        newModal += `<button class="btn"><a href="${respObj.site[i].e_view}" target="_blank">View</a></button>`
+        newModal += `<button class="btn"><a href="${respObj.site[i].e_code}" target="_blank">Github</a></button>`
         newModal += `</div>`;
       // newModal += `</div>`;
     }

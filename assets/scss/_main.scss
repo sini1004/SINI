@@ -650,8 +650,10 @@ body {
     font-size: 1.2rem;
   }
   p {
-    margin-top: 10px;
+    margin: 20px 0;
+    text-align: center;
     text-transform: uppercase;
+    font-size: 1.2rem;
     span {
       display: inline-block;
       color: black;
@@ -672,6 +674,23 @@ body {
       text-transform: uppercase;
       border-radius: 3px;
     }
+  }
+  .btn {
+    padding: 10px;
+    margin: 5px 5px 5px 0;
+    background-color: $mainColor1;
+  }
+  .e_skill {
+    display: block;
+    padding: 10px 0;
+  }
+  .e_page {
+    display: block;
+    padding: 10px 0;
+  }
+  .e_comment {
+    display: block;
+    padding: 10px 0;
   }
 }
 

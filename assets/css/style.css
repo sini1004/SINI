@@ -714,8 +714,10 @@ body {
   font-size: 1.2rem;
 }
 .modal-content p {
-  margin-top: 10px;
+  margin: 20px 0;
+  text-align: center;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 .modal-content p span {
   display: inline-block;
@@ -736,6 +738,23 @@ body {
   padding: 10px;
   text-transform: uppercase;
   border-radius: 3px;
+}
+.modal-content .btn {
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+  background-color: #203e97;
+}
+.modal-content .e_skill {
+  display: block;
+  padding: 10px 0;
+}
+.modal-content .e_page {
+  display: block;
+  padding: 10px 0;
+}
+.modal-content .e_comment {
+  display: block;
+  padding: 10px 0;
 }
 
 /* The Close Button */

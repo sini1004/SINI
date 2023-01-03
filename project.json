@@ -18,11 +18,11 @@
       "title":"binggrae",
       "url":"assets/img/binggrae.png",
       "alt" : "binggrae",
-      "e_url":"assets/img/dosirack.jpg",
+      "e_url":"assets/img/binggrae.png",
       "e_title" : "빙그레",
       "e_skill" : "html5, css3, jquery",
       "e_page" : "Main",
-      "e_view":"https://sini1004.github.io/WebSite_Dosirak/",
+      "e_view":"https://sini1004.github.io/Website_Binggrae/",
       "e_code":"https://github.com/sini1004/WebSite_Dosirak",
       "e_comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
     },
@@ -31,12 +31,12 @@
       "title":"urban",
       "url":"assets/img/urban.png",
       "alt" : "urban",
-      "e_url":"assets/img/dosirack.jpg",
+      "e_url":"assets/img/urban.png",
       "e_title" : "어반런드렛",
       "e_skill" : "html5, css3, jquery",
       "e_page" : "Main",
-      "e_view":"https://sini1004.github.io/WebSite_Dosirak/",
-      "e_code":"https://github.com/sini1004/WebSite_Dosirak",
+      "e_view":"https://sini1004.github.io/Website_Urban",
+      "e_code":"https://github.com/sini1004/Website_Urban",
       "e_comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
     },
     {
@@ -44,12 +44,12 @@
       "title":"tiretech",
       "url":"assets/img/tiretech.png",
       "alt" : "tiretech",
-      "e_url":"assets/img/dosirack.jpg",
+      "e_url":"assets/img/tiretech.png",
       "e_title" : "타이어테크",
       "e_skill" : "html5, css3, jquery",
-      "e_page" : "Main",
-      "e_view":"https://sini1004.github.io/WebSite_Dosirak/",
-      "e_code":"https://github.com/sini1004/WebSite_Dosirak",
+      "e_page" : "Main + sub*2",
+      "e_view":"https://sini1004.github.io/Website_Tiretech/",
+      "e_code":"https://github.com/sini1004/Website_Tiretech",
       "e_comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
     },
     {
@@ -57,26 +57,26 @@
       "title":"kakao",
       "url":"assets/img/kakao.png",
       "alt" : "kakao",
-      "e_url":"assets/img/dosirack.jpg",
+      "e_url":"assets/img/kakao.png",
       "e_title" : "카카오프렌즈",
       "e_skill" : "html5, css3, jquery",
       "e_page" : "Main",
-      "e_view":"https://sini1004.github.io/WebSite_Dosirak/",
-      "e_code":"https://github.com/sini1004/WebSite_Dosirak",
-      "e_comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+      "e_view":"https://sini1004.github.io/Website_Kakao/",
+      "e_code":"https://github.com/sini1004/Website_Kakao",
+      "e_comment" : "모바일사이즈로 제작한 모바일 웹 사이트입니다."
     },
     {
       "id" : 6,
       "title":"60s",
       "url":"assets/img/60s.png",
       "alt" : "60s",
-      "e_url":"assets/img/dosirack.jpg",
+      "e_url":"assets/img/60s.png",
       "e_title" : "60s",
-      "e_skill" : "html5, css3, jquery",
+      "e_skill" : "html5, css3, jquer, Bootstrap",
       "e_page" : "Main",
-      "e_view":"https://sini1004.github.io/WebSite_Dosirak/",
-      "e_code":"https://github.com/sini1004/WebSite_Dosirak",
-      "e_comment" : "미디어 쿼리를 이용하여 디바이스 종류에 따라 유연하게 보여지는 반응형 웹 사이트입니다."
+      "e_view":"https://sini1004.github.io/Website_60s/",
+      "e_code":"https://github.com/sini1004/Website_60s",
+      "e_comment" : "부트스트랩으로 제작한 웹 사이트입니다."
     }
   ],
   
