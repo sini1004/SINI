@@ -225,7 +225,32 @@
 
 
 <script>
+  window.onload = function () {
+    const boxwrap = document.getElementById("site_img");
+    const boxcount = boxwrap.childElementCount;
+    const boxclick = document.getElementsByClassName("box");
+    const modal = document.querySelector(".modal"); //수정(getElementsByClassName는 배열 형식으로 받아옴, 하나만 있어도)
+    const modal_wrap = document.getElementsByClassName("modal-wrap");
+    const modal_cont = document.getElementsByClassName("modal-content");
 
+    console.log("modal?", modal);
+    for (let i = 0; i < boxcount; i++) {
+      boxclick[i].onclick = function () {
+        console.log("클릭", modal_cont[i]);
+        modal.classList.add("show");
+        modal_cont[i].classList.add("show");
+        const closeBtn = modal_cont[i].querySelector(".close");
+
+        closeBtn.addEventListener("click", function () {
+          modal.classList.remove("show");
+          modal_cont[i].classList.remove("show");
+        });
+      };
+    }
+  };
+</script>
+
+<!-- <script>
 window.onload = function() {
   const boxwrap = document.getElementById('site_img');
   const boxcount = boxwrap.childElementCount;
@@ -242,8 +267,7 @@ window.onload = function() {
     };
   }
 }
-  
-  </script>
+</script> -->
   
 
 
