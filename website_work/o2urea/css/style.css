@@ -12,7 +12,7 @@ body{
 /* header */
 header{
   height: 100vh;
-  background: url(/website_work/o2urea/img/o2uera_bg.png) no-repeat right bottom;
+  background: url('/website_work/o2urea/img/o2uera_bg.png') no-repeat right bottom;
   background-size: 70%;
 }
 header h1{
